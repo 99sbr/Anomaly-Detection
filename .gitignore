@@ -1,0 +1,9 @@
+# Created by .ignore support plugin (hsz.mobi)
+Data/
+app/__pycache__/
+app/main/__pycache__/
+app/main/controller/__pycache__/
+app/main/model/__pycache__/
+app/main/service/__pycache__/
+app/main/util/__pycache__/
+app/test/__pycache__/
