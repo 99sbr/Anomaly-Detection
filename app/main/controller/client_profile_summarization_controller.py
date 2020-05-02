@@ -1,4 +1,5 @@
 from flask_restplus import Resource
+
 from ..service.client_profile_summarization_service import bert_summarizer
 from ..util.client_profile_summarization import ClientProfileSummarization
 
@@ -15,6 +16,7 @@ class ProfileSummarization(Resource):
     '''
     Performs Address Search on Web Data for Client Profile
     '''
+
     @api.doc("Get Client Profile Summary")
     @api.expect(payload, validate=True)
     def post(self):
@@ -22,6 +24,7 @@ class ProfileSummarization(Resource):
         try:
             client_name = self.api.payload['ProfileSummaryBenchmark']
             search_url_list = self.api.payload['SearchUrlList']
-            bert_summarizer(source_url_list=search_url_list, kyc_doc=client_name)
+            summary, similarity_score, polarity = bert_summarizer(source_url_list=search_url_list, kyc_doc=client_name)
+            return {'Summary': summary, 'Similarity Score': similarity_score, 'Polarity': polarity}
         except Exception as e:
             self.api.abort(500)

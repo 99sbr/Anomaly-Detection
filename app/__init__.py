@@ -2,7 +2,6 @@ from flask_restplus import Api
 from flask import Blueprint
 from .main.controller.client_address_search_controller import api as ns_address_search
 from .main.controller.client_profile_summarization_controller import api as ns_profile_summarization
-
 blueprint = Blueprint('api', __name__)
 
 api = Api(blueprint,
