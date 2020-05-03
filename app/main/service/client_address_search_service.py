@@ -4,6 +4,12 @@ from ordered_set import OrderedSet
 from .base_services import text_cleaning, __parse_address, parse_article
 
 def main_call(base_url_list, client_name):
+    """
+
+    :param base_url_list:
+    :param client_name:
+    :return:
+    """
     corpus_token_list = []
     for url in base_url_list:
         clean_text_list = parse_article(requests.get(url).text)

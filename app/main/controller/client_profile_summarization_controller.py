@@ -1,5 +1,4 @@
 from flask_restplus import Resource
-
 from ..service.client_profile_summarization_service import bert_summarizer
 from ..util.client_profile_summarization import ClientProfileSummarization
 

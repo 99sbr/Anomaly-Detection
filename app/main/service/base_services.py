@@ -26,7 +26,7 @@ def text_cleaning(raw_text):
         token for token in raw_text_list if token not in stopwords
     ]
     clean_sent_list = [
-        re.sub('[^A-Za-z0-9]+\.-/', '', token) for token in raw_text_list
+        re.sub('[^A-Za-z0-9]+.-/', '', token) for token in raw_text_list
         if bool(token)
     ]
     clean_sent = ' '.join(clean_sent_list)
@@ -36,7 +36,6 @@ def text_cleaning(raw_text):
     spacy_text_list = []
     for sent in doc.sents:
         spacy_text_list.append(sent.text)
-    #     spacy_text_list = random.sample(spacy_text_list, len(spacy_text_list))
     return spacy_text_list
 
 
@@ -59,7 +58,7 @@ def parse_article(text):
         root = root.parent
 
     # find all the content elements.
-    ps = root.find_all(['h2', 'h3', 'h4', 'h5', 'h6', 'p', 'pre'])
+    ps = root.find_all(['p'])
     ps.insert(0, h1)
     content = [tag2text(p) for p in ps]
     content = [x for x in content if bool(x)]
@@ -67,14 +66,16 @@ def parse_article(text):
 
 
 def gather_content_data(url_list):
-    assert len(url_list) > 0
-    corpus = []
-    for url in url_list:
-        content = parse_article(requests.get(url).text)
-        if bool(content):
-            corpus.append(' '.join(content))
-    spacy_text_list = text_cleaning(' '.join(corpus))
-    return ' '.join(spacy_text_list)
+    if len(url_list) > 0:
+        corpus = []
+        for url in url_list:
+            content = parse_article(requests.get(url).text)
+            if bool(content):
+                corpus.append(' '.join(content))
+        spacy_text_list = text_cleaning(' '.join(corpus))
+        return ' '.join(spacy_text_list)
+    else:
+        app.abort(400, 'Empty Url List')
 
 
 def __parse_address(match_text):

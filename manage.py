@@ -1,13 +1,11 @@
 import unittest
 from flask_script import Manager
-
 from app import blueprint
 from app.main import create_app
+from waitress import serve
 
-app = create_app('dev')
+app = create_app('test')
 app.register_blueprint(blueprint)
-app.app_context().push()
-
 manager = Manager(app)
 
 
@@ -18,7 +16,7 @@ manager = Manager(app)
 
 @manager.command
 def run():
-    app.run(host='0.0.0.0', port=1234, debug=True)
+    serve(app, port=1234)
 
 
 @manager.command
