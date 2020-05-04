@@ -7,7 +7,6 @@ from .base_services import gather_content_data
 spacy_nlp = spacy.load('en_core_web_lg')
 
 
-# noinspection PySingleQuotedDocstring
 def calculate_similarity_score(full, kyc_doc):
     """
     :param full:
