@@ -1,7 +1,6 @@
 import re
 from collections import defaultdict
 
-import requests
 import spacy
 import stanza
 from bs4 import BeautifulSoup
@@ -20,13 +19,15 @@ stopwords = set(stopwords.words('english'))
 model = Summarizer()
 
 
-def text_cleaning(raw_text):
+def text_cleaning(raw_text, remove_stopwords=True):
     raw_text_list = raw_text.split('\n')
-    raw_text_list = [
-        token for token in raw_text_list if token not in stopwords
-    ]
+    if remove_stopwords:
+        print('removing stopwords')
+        raw_text_list = [
+            token for token in raw_text_list if token not in stopwords
+        ]
     clean_sent_list = [
-        re.sub('[^A-Za-z0-9]+.-/', '', token) for token in raw_text_list
+        re.sub("[^A-Za-z0-9]+\.-/", '', token) for token in raw_text_list
         if bool(token)
     ]
     clean_sent = ' '.join(clean_sent_list)
@@ -45,37 +46,28 @@ def tag2text(tag):
 
 
 def parse_article(text):
-    soup = BeautifulSoup(text, 'html.parser')
+    try:
+        soup = BeautifulSoup(text, 'html.parser')
+        # find the article title
+        h1 = soup.find('h1')
 
-    # find the article title
-    h1 = soup.find('h1')
+        # find the common parent for <h1> and all <p>s.
+        root = h1
+        while root.name != 'body':
+            if root.parent == None:
+                break
+            root = root.parent
 
-    # find the common parent for <h1> and all <p>s.
-    root = h1
-    while root.name != 'body':
-        if root.parent == None:
-            break
-        root = root.parent
+        # find all the content elements.
+        ps = root.find_all(['h2', 'h3', 'h4', 'h5', 'h6', 'p', 'pre'])
+        ps.insert(0, h1)
+        content = [tag2text(p) for p in ps]
+        content = [x for x in content if bool(x)]
+    except Exception as e:
+        print(e)
+        return ''
 
-    # find all the content elements.
-    ps = root.find_all(['p'])
-    ps.insert(0, h1)
-    content = [tag2text(p) for p in ps]
-    content = [x for x in content if bool(x)]
     return content
-
-
-def gather_content_data(url_list):
-    if len(url_list) > 0:
-        corpus = []
-        for url in url_list:
-            content = parse_article(requests.get(url).text)
-            if bool(content):
-                corpus.append(' '.join(content))
-        spacy_text_list = text_cleaning(' '.join(corpus))
-        return ' '.join(spacy_text_list)
-    else:
-        app.abort(400, 'Empty Url List')
 
 
 def __parse_address(match_text):
