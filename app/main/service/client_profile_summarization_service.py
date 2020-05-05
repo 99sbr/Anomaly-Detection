@@ -44,7 +44,7 @@ def bert_summarizer(source_url_list, kyc_doc):
     """
     corpus = gather_content_data(url_list=source_url_list)
     model = Summarizer()
-    result = model(corpus, min_length=30, ratio=0.6, algorithm='gmm', max_length=len(corpus))
+    result = model(corpus, min_length=30, ratio=0.5, algorithm='gmm', max_length=len(corpus))
     full = ''.join(result)
     similarity_score = calculate_similarity_score(full, kyc_doc)
     testimonial = TextBlob(full)

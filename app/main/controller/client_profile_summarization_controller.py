@@ -22,7 +22,7 @@ class ProfileSummarization(Resource):
     def post(self):
         # noinspection PyBroadException
         try:
-            client_name = self.api.payload['ProfileSummaryBenchmark']
+            client_name = self.api.payload['KYC-Documentum']
             search_url_list = self.api.payload['SearchUrlList']
             summary, similarity_score, polarity = bert_summarizer(source_url_list=search_url_list, kyc_doc=client_name)
             return {'Summary': summary, 'Similarity Score': similarity_score, 'Polarity': polarity}
