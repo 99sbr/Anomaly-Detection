@@ -16580,16 +16580,15 @@ a.anchor-link {
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[73]:</div>
+<div class="prompt input_prompt">In&nbsp;[109]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">source_url_list</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="s2">&quot;https://www.emis.com/php/company-profile/SG/Ficofi_Partners_Holding_Pte_Ltd_en_6690179.html&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;https://www.timesbusinessdirectory.com/companies/ficofi-partners-holding-pte-ltd&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;https://opengovsg.com/corporate/201309826H&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;https://recordowl.com/company/ficofi-partners-holding-pte-ltd&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;https://www.singaporecontacts.com/companies/ficofi-partners-holding-pte-ltd-singapore/84b81fc9-5b2b-e993-a43e-5b4acb7e0366&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;https://singapore-corp.com/co/ficofi-partners-holding-pte-ltd&quot;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">source_url_list</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&quot;https://recordowl.com/company/ficofi-partners-holding-pte-ltd&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;https://www.emis.com/php/company-profile/SG/Ficofi_Partners_Holding_Pte_Ltd_en_6690179.html&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;https://www.timesbusinessdirectory.com/companies/ficofi-partners-holding-pte-ltd&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;https://opengovsg.com/corporate/201309826H&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;https://www.singaporecontacts.com/companies/ficofi-partners-holding-pte-ltd-singapore/84b81fc9-5b2b-e993-a43e-5b4acb7e0366&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;https://singapore-corp.com/co/ficofi-partners-holding-pte-ltd&quot;</span>
 <span class="p">]</span>
 </pre></div>
 
@@ -16607,7 +16606,7 @@ a.anchor-link {
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[64]:</div>
+<div class="prompt input_prompt">In&nbsp;[110]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">text_cleaning</span><span class="p">(</span><span class="n">raw_text</span><span class="p">):</span>
@@ -16672,7 +16671,7 @@ a.anchor-link {
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[74]:</div>
+<div class="prompt input_prompt">In&nbsp;[111]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">gather_content_data</span><span class="p">(</span><span class="n">url_list</span><span class="p">):</span>
@@ -16694,7 +16693,7 @@ a.anchor-link {
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[75]:</div>
+<div class="prompt input_prompt">In&nbsp;[112]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">corpus</span> <span class="o">=</span> <span class="n">gather_content_data</span><span class="p">(</span><span class="n">url_list</span><span class="o">=</span><span class="n">source_url_list</span><span class="p">)</span>
@@ -16714,10 +16713,10 @@ a.anchor-link {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>https://www.emis.com/php/company-profile/SG/Ficofi_Partners_Holding_Pte_Ltd_en_6690179.html
+<pre>https://recordowl.com/company/ficofi-partners-holding-pte-ltd
+https://www.emis.com/php/company-profile/SG/Ficofi_Partners_Holding_Pte_Ltd_en_6690179.html
 https://www.timesbusinessdirectory.com/companies/ficofi-partners-holding-pte-ltd
 https://opengovsg.com/corporate/201309826H
-https://recordowl.com/company/ficofi-partners-holding-pte-ltd
 https://www.singaporecontacts.com/companies/ficofi-partners-holding-pte-ltd-singapore/84b81fc9-5b2b-e993-a43e-5b4acb7e0366
 https://singapore-corp.com/co/ficofi-partners-holding-pte-ltd
 </pre>
@@ -16730,7 +16729,7 @@ https://singapore-corp.com/co/ficofi-partners-holding-pte-ltd
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[76]:</div>
+<div class="prompt input_prompt">In&nbsp;[128]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">corpus</span>
@@ -16746,13 +16745,13 @@ https://singapore-corp.com/co/ficofi-partners-holding-pte-ltd
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[76]:</div>
+    <div class="prompt output_prompt">Out[128]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;Ficofi Partners Holding Pte. Ltd. is an enterprise located in Singapore, with the main office in Singapore. It operates in the Management of Companies and Enterprises sector. It was incorporated on April 12, 2013. Headquarters 25 International Business Park #03-01/02 German Centre Singapore 609916 Singapore; Singapore; Postal Code: 609916 Contact Details: Purchase the Ficofi Partners Holding Pte. Ltd. report to view the information. EMIS company profiles are part of a larger information service which combines company, industry and country data and analysis for over 145 emerging markets. To view more information, Request a demonstration of the EMIS service FICOFI PARTNERS HOLDING PTE LTD 25 International Business Park #03-01/02 German Centre Singapore 609916 Copyright © 2020. Marshall Cavendish Business Information Pte Ltd. All Rights Reserved. FICOFI PARTNERS HOLDING PTE. LTD. (UEN ID 201309826H) is a corporate entity registered with Accounting and Corporate Regulatory Authority. The UEN issue date is April 13, 2013. The entity status is Live Company. Please comment or provide details below to improve the information on . This dataset includes 1.5 million corporate entities registered with Accounting and Corporate Regulatory Authority (ACRA), Singapore. Each entity is registered with unique entity number (UEN), entity name, entity time, UEN issue date, location, etc. Registration No. / Unique Entity Number: 201309826H FICOFI PARTNERS HOLDING PTE. LTD. (the &#34;Company&#34;) The Company is a PRIVATE COMPANY LIMITED BY SHARES and it\&#39;s current status is Live Company. The company was registered / incorporated on 12 April 2013 (Friday), 7 years ago The address of this company registered office is 25 INTERNATIONAL BUSINESS PARK #03-01/02 GERMAN CENTRE SINGAPORE 609916 The company has 7 officers / owners / shareholders. The company principal activity is OTHER HOLDING COMPANIES. The company secondary activity is MANAGEMENT CONSULTANCY SERVICES N.E.C.. HOT LEADS / LISTS HR Managers eMail Lists HR Managers Database HR-VP, Directors Database Finance Managers eMail Lists Finance Managers Database IT Managers eMail Lists IT Managers Database CIO / CTO Database CFO / Director - Finance eMail Lists CFO / Director - Finance Database Sales Managers eMail Lists Sales Managers Database Sales-VP, Director Database CEO, President, MD eMail Lists Directors (Share Holding) eMail Lists Marketing Managers eMail Lists Marketing Managers Database Marketing-VP, Director Database CEO, President, MD Database Directors (Share Holding) Database Home | Enquiry | FAQ | Contact Copyright © 2020 Singapore Contacts. All Rights Reserved.&#39;</pre>
+<pre>&#39;Registration No. / Unique Entity Number: 201309826H FICOFI PARTNERS HOLDING PTE. LTD. (the &#34;Company&#34;) The Company is a PRIVATE COMPANY LIMITED BY SHARES and it\&#39;s current status is Live Company. The company was registered / incorporated on 12 April 2013 (Friday), 7 years ago The address of this company registered office is 25 INTERNATIONAL BUSINESS PARK #03-01/02 GERMAN CENTRE SINGAPORE 609916 The company has 7 officers / owners / shareholders. The company principal activity is OTHER HOLDING COMPANIES. The company secondary activity is MANAGEMENT CONSULTANCY SERVICES N.E.C.. Ficofi Partners Holding Pte. Ltd. is an enterprise located in Singapore, with the main office in Singapore. It operates in the Management of Companies and Enterprises sector. It was incorporated on April 12, 2013. Headquarters 25 International Business Park #03-01/02 German Centre Singapore 609916 Singapore; Singapore; Postal Code: 609916 Contact Details: Purchase the Ficofi Partners Holding Pte. Ltd. report to view the information. EMIS company profiles are part of a larger information service which combines company, industry and country data and analysis for over 145 emerging markets. To view more information, Request a demonstration of the EMIS service FICOFI PARTNERS HOLDING PTE LTD 25 International Business Park #03-01/02 German Centre Singapore 609916 Copyright © 2020. Marshall Cavendish Business Information Pte Ltd. All Rights Reserved. FICOFI PARTNERS HOLDING PTE. LTD. (UEN ID 201309826H) is a corporate entity registered with Accounting and Corporate Regulatory Authority. The UEN issue date is April 13, 2013. The entity status is Live Company. Please comment or provide details below to improve the information on . This dataset includes 1.5 million corporate entities registered with Accounting and Corporate Regulatory Authority (ACRA), Singapore. Each entity is registered with unique entity number (UEN), entity name, entity time, UEN issue date, location, etc. HOT LEADS / LISTS HR Managers eMail Lists HR Managers Database HR-VP, Directors Database Finance Managers eMail Lists Finance Managers Database IT Managers eMail Lists IT Managers Database CIO / CTO Database CFO / Director - Finance eMail Lists CFO / Director - Finance Database Sales Managers eMail Lists Sales Managers Database Sales-VP, Director Database CEO, President, MD eMail Lists Directors (Share Holding) eMail Lists Marketing Managers eMail Lists Marketing Managers Database Marketing-VP, Director Database CEO, President, MD Database Directors (Share Holding) Database Home | Enquiry | FAQ | Contact Copyright © 2020 Singapore Contacts. All Rights Reserved.&#39;</pre>
 </div>
 
 </div>
@@ -16770,7 +16769,7 @@ https://singapore-corp.com/co/ficofi-partners-holding-pte-ltd
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[77]:</div>
+<div class="prompt input_prompt">In&nbsp;[114]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">Summarizer</span><span class="p">()</span>
@@ -16783,7 +16782,7 @@ https://singapore-corp.com/co/ficofi-partners-holding-pte-ltd
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[86]:</div>
+<div class="prompt input_prompt">In&nbsp;[129]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">corpus</span><span class="p">,</span> <span class="n">min_length</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">algorithm</span><span class="o">=</span><span class="s1">&#39;gmm&#39;</span><span class="p">,</span><span class="n">ratio</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">max_length</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">corpus</span><span class="p">))</span>
@@ -16807,9 +16806,9 @@ https://singapore-corp.com/co/ficofi-partners-holding-pte-ltd
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Ltd. is an enterprise located in Singapore, with the main office in Singapore. It operates in the Management of Companies and Enterprises sector. It was incorporated on April 12, 2013. EMIS company profiles are part of a larger information service which combines company, industry and country data and analysis for over 145 emerging markets. To view more information, Request a demonstration of the EMIS service FICOFI PARTNERS HOLDING PTE LTD 25 International Business Park #03-01/02 German Centre Singapore 609916 Copyright © 2020. Marshall Cavendish Business Information Pte Ltd. All Rights Reserved. The entity status is Live Company. Each entity is registered with unique entity number (UEN), entity name, entity time, UEN issue date, location, etc. The company secondary activity is MANAGEMENT CONSULTANCY SERVICES N.E.C.. HOT LEADS / LISTS HR Managers eMail Lists HR Managers Database HR-VP, Directors Database Finance Managers eMail Lists Finance Managers Database IT Managers eMail Lists IT Managers Database CIO / CTO Database CFO / Director - Finance eMail Lists CFO / Director - Finance Database Sales Managers eMail Lists Sales Managers Database Sales-VP, Director Database CEO, President, MD eMail Lists Directors (Share Holding) eMail Lists Marketing Managers eMail Lists Marketing Managers Database Marketing-VP, Director Database CEO, President, MD Database Directors (Share Holding) Database Home | Enquiry | FAQ | Contact Copyright © 2020 Singapore Contacts.
+<pre>Unique Entity Number: 201309826H FICOFI PARTNERS HOLDING PTE. The company was registered / incorporated on 12 April 2013 (Friday), 7 years ago The address of this company registered office is 25 INTERNATIONAL BUSINESS PARK #03-01/02 GERMAN CENTRE SINGAPORE 609916 The company has 7 officers / owners / shareholders. Ltd. is an enterprise located in Singapore, with the main office in Singapore. It was incorporated on April 12, 2013. Ltd. report to view the information. EMIS company profiles are part of a larger information service which combines company, industry and country data and analysis for over 145 emerging markets. To view more information, Request a demonstration of the EMIS service FICOFI PARTNERS HOLDING PTE LTD 25 International Business Park #03-01/02 German Centre Singapore 609916 Copyright © 2020. Marshall Cavendish Business Information Pte Ltd. All Rights Reserved. The entity status is Live Company. Please comment or provide details below to improve the information on . HOT LEADS / LISTS HR Managers eMail Lists HR Managers Database HR-VP, Directors Database Finance Managers eMail Lists Finance Managers Database IT Managers eMail Lists IT Managers Database CIO / CTO Database CFO / Director - Finance eMail Lists CFO / Director - Finance Database Sales Managers eMail Lists Sales Managers Database Sales-VP, Director Database CEO, President, MD eMail Lists Directors (Share Holding) eMail Lists Marketing Managers eMail Lists Marketing Managers Database Marketing-VP, Director Database CEO, President, MD Database Directors (Share Holding) Database Home | Enquiry | FAQ | Contact Copyright © 2020 Singapore Contacts.
 
- Polarity of Article: 0.12533670033670033
+ Polarity of Article: 0.14280303030303027
 </pre>
 </div>
 </div>
@@ -16827,7 +16826,7 @@ https://singapore-corp.com/co/ficofi-partners-holding-pte-ltd
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[79]:</div>
+<div class="prompt input_prompt">In&nbsp;[116]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">extraction</span> <span class="o">=</span> <span class="n">spacy_nlp</span><span class="p">(</span><span class="n">full</span><span class="p">)</span>
@@ -16849,7 +16848,7 @@ https://singapore-corp.com/co/ficofi-partners-holding-pte-ltd
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>The Similarity Score of Summarized Text is:  88.67057066260796
+<pre>The Similarity Score of Summarized Text is:  88.07950034132232
 </pre>
 </div>
 </div>
@@ -16918,11 +16917,11 @@ https://singapore-corp.com/co/ficofi-partners-holding-pte-ltd
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[92]:</div>
+<div class="prompt input_prompt">In&nbsp;[104]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">input_data</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">&quot;ProfileSummaryBenchmark&quot;</span><span class="p">:</span>
+    <span class="s2">&quot;KYC-Documentum&quot;</span><span class="p">:</span>
     <span class="s2">&quot;Holding company activities and collection center for FICOFI which is engaged in Import, Distribution and Sales of wines and spirits. The group has also centralized its operations in Singapore and setup a global treasury/ collection center based here.The primary reason for this decision was that the group has lot of suppliers and clients who are commoon across various entities. When thecliens make payments they usually make one lumpsum payment for various invoices. To ensure that they streamline the process for their clients,ficofi has decides that they will start with centraliznig the collecttion process- collect funds from clients into accounts with SG.&quot;</span><span class="p">,</span>
     <span class="s2">&quot;SearchUrlList&quot;</span><span class="p">:</span> <span class="p">[</span>
         <span class="s2">&quot;https://recordowl.com/company/ficofi-partners-holding-pte-ltd&quot;</span><span class="p">,</span>
@@ -16942,7 +16941,7 @@ https://singapore-corp.com/co/ficofi-partners-holding-pte-ltd
 </div></div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[93]:</div>
+<div class="prompt input_prompt">In&nbsp;[105]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hitting Profile Summarization API&#39;</span><span class="p">)</span>
@@ -16974,7 +16973,7 @@ https://singapore-corp.com/co/ficofi-partners-holding-pte-ltd
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[97]:</div>
+<div class="prompt input_prompt">In&nbsp;[106]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The Profile Summary of FICOFI PARTNERS HOLDING PTE extracted from web: </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s1">&#39;Summary&#39;</span><span class="p">]))</span>
@@ -16995,7 +16994,7 @@ https://singapore-corp.com/co/ficofi-partners-holding-pte-ltd
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>The Profile Summary of FICOFI PARTNERS HOLDING PTE extracted from web: 
- Unique Entity Number: 201309826H FICOFI PARTNERS HOLDING PTE. The company was registered / incorporated on 12 April 2013 (Friday), 7 years ago The address of this company registered office is 25 INTERNATIONAL BUSINESS PARK #03-01/02 GERMAN CENTRE SINGAPORE 609916 The company has 7 officers / owners / shareholders. Ltd. is an enterprise located in Singapore, with the main office in Singapore. It operates in the Management of Companies and Enterprises sector. It was incorporated on April 12, 2013. Ltd. report to view the information. EMIS company profiles are part of a larger information service which combines company, industry and country data and analysis for over 145 emerging markets. To view more information, Request a demonstration of the EMIS service FICOFI PARTNERS HOLDING PTE LTD 25 International Business Park #03-01/02 German Centre Singapore 609916 Copyright © 2020. Marshall Cavendish Business Information Pte Ltd. All Rights Reserved. UEN ID 201309826H) is a corporate entity registered with Accounting and Corporate Regulatory Authority. The entity status is Live Company. Please comment or provide details below to improve the information on . HOT LEADS / LISTS HR Managers eMail Lists HR Managers Database HR-VP, Directors Database Finance Managers eMail Lists Finance Managers Database IT Managers eMail Lists IT Managers Database CIO / CTO Database CFO / Director - Finance eMail Lists CFO / Director - Finance Database Sales Managers eMail Lists Sales Managers Database Sales-VP, Director Database CEO, President, MD eMail Lists Directors (Share Holding) eMail Lists Marketing Managers eMail Lists Marketing Managers Database Marketing-VP, Director Database CEO, President, MD Database Directors (Share Holding) Database Home | Enquiry | FAQ | Contact Copyright © 2020 Singapore Contacts.
+ Unique Entity Number: 201309826H FICOFI PARTNERS HOLDING PTE. The company was registered / incorporated on 12 April 2013 (Friday), 7 years ago The address of this company registered office is 25 INTERNATIONAL BUSINESS PARK #03-01/02 GERMAN CENTRE SINGAPORE 609916 The company has 7 officers / owners / shareholders. Ltd. is an enterprise located in Singapore, with the main office in Singapore. It was incorporated on April 12, 2013. Ltd. report to view the information. EMIS company profiles are part of a larger information service which combines company, industry and country data and analysis for over 145 emerging markets. To view more information, Request a demonstration of the EMIS service FICOFI PARTNERS HOLDING PTE LTD 25 International Business Park #03-01/02 German Centre Singapore 609916 Copyright © 2020. Marshall Cavendish Business Information Pte Ltd. All Rights Reserved. The entity status is Live Company. Please comment or provide details below to improve the information on . HOT LEADS / LISTS HR Managers eMail Lists HR Managers Database HR-VP, Directors Database Finance Managers eMail Lists Finance Managers Database IT Managers eMail Lists IT Managers Database CIO / CTO Database CFO / Director - Finance eMail Lists CFO / Director - Finance Database Sales Managers eMail Lists Sales Managers Database Sales-VP, Director Database CEO, President, MD eMail Lists Directors (Share Holding) eMail Lists Marketing Managers eMail Lists Marketing Managers Database Marketing-VP, Director Database CEO, President, MD Database Directors (Share Holding) Database Home | Enquiry | FAQ | Contact Copyright © 2020 Singapore Contacts.
 </pre>
 </div>
 </div>
@@ -17006,7 +17005,7 @@ https://singapore-corp.com/co/ficofi-partners-holding-pte-ltd
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[98]:</div>
+<div class="prompt input_prompt">In&nbsp;[107]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The Profile Summary of FICOFI PARTNERS HOLDING PTE extracted from web: </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s1">&#39;Similarity Score&#39;</span><span class="p">]))</span>
@@ -17027,7 +17026,7 @@ https://singapore-corp.com/co/ficofi-partners-holding-pte-ltd
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>The Profile Summary of FICOFI PARTNERS HOLDING PTE extracted from web: 
- 0.8905983419196403
+ 0.8796509024349501
 </pre>
 </div>
 </div>
@@ -17038,7 +17037,7 @@ https://singapore-corp.com/co/ficofi-partners-holding-pte-ltd
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[99]:</div>
+<div class="prompt input_prompt">In&nbsp;[108]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The Profile Summary of FICOFI PARTNERS HOLDING PTE extracted from web: </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s1">&#39;Polarity&#39;</span><span class="p">]))</span>
@@ -17059,11 +17058,24 @@ https://singapore-corp.com/co/ficofi-partners-holding-pte-ltd
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>The Profile Summary of FICOFI PARTNERS HOLDING PTE extracted from web: 
- 0.11900252525252523
+ 0.14280303030303027
 </pre>
 </div>
 </div>
 
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
 </div>
 </div>
 
