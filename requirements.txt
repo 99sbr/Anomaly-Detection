@@ -59,7 +59,8 @@ docutils==0.15.2
 dtale==1.7.9
 easydict==1.8
 efficientnet==1.1.0
-https://github.com/explosion/spacy-models/releases//tag/en_core_web_lg-2.2.5
+spacy>=2.2.0,<3.0.0
+https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-2.2.5/en_core_web_lg-2.2.5.tar.gz#egg=en_core_web_lg
 entrypoints==0.3
 falcon==2.0.0
 fasttext==0.9.2
