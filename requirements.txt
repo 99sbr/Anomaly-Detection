@@ -59,7 +59,8 @@ docutils==0.15.2
 dtale==1.7.9
 easydict==1.8
 efficientnet==1.1.0
-spacy>=2.2.0
+spacy==2.2.4
+spacy-stanza==0.2.1
 https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-2.2.5/en_core_web_lg-2.2.5.tar.gz#egg=en_core_web_lg
 entrypoints==0.3
 falcon==2.0.0
@@ -275,8 +276,6 @@ six==1.14.0
 sklearn==0.0
 smart-open==1.8.4
 soupsieve==1.9.4
-spacy==2.2.4
-spacy-stanza==0.2.1
 SQLAlchemy==1.3.16
 sqlitedict==1.6.0
 srsly==1.0.2
