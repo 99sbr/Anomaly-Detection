@@ -7,14 +7,13 @@ from bs4 import BeautifulSoup
 from nltk.corpus import stopwords
 from ordered_set import OrderedSet
 from postal.parser import parse_address
-from sentence_transformers import SentenceTransformer
+
 from spacy_stanza import StanzaLanguage
 from summarizer import Summarizer
 
 snlp = stanza.Pipeline(lang="en")
 stanza_nlp = StanzaLanguage(snlp)
 spacy_nlp = spacy.load('en_core_web_lg')
-bert_sent_model = SentenceTransformer('roberta-base-nli-mean-tokens')
 stopwords = set(stopwords.words('english'))
 model = Summarizer()
 
