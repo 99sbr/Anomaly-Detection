@@ -3,7 +3,6 @@ from collections import defaultdict
 import spacy
 import stanza
 from bs4 import BeautifulSoup
-from nltk.corpus import stopwords
 from ordered_set import OrderedSet
 # from postal.parser import parse_address
 import usaddress
@@ -14,7 +13,8 @@ from summarizer import Summarizer
 # stanza_nlp = StanzaLanguage(snlp)
 
 spacy_nlp = spacy.load('en_core_web_lg')
-stopwords = set(stopwords.words('english'))
+from spacy.lang.en.stop_words import STOP_WORDS
+
 model = Summarizer()
 
 
@@ -23,7 +23,7 @@ def text_cleaning(raw_text, remove_stopwords=True):
     if remove_stopwords:
         print('removing stopwords')
         raw_text_list = [
-            token for token in raw_text_list if token not in stopwords
+            token for token in raw_text_list if token not in STOP_WORDS
         ]
     clean_sent_list = [
         re.sub("[^A-Za-z0-9]", '', token) for token in raw_text_list
