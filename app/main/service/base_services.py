@@ -1,6 +1,5 @@
 import re
 from collections import defaultdict
-
 import spacy
 import stanza
 from bs4 import BeautifulSoup
