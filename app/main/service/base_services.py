@@ -5,8 +5,8 @@ import stanza
 from bs4 import BeautifulSoup
 from nltk.corpus import stopwords
 from ordered_set import OrderedSet
-from postal.parser import parse_address
-
+# from postal.parser import parse_address
+import usaddress
 from spacy_stanza import StanzaLanguage
 from summarizer import Summarizer
 
@@ -70,9 +70,10 @@ def parse_article(text):
 
 def __parse_address(match_text):
     address = defaultdict(OrderedSet)
+
     for match in match_text:
         _addrs = OrderedSet(
-            parse_address(address=' '.join(list(match))))
+            usaddress.parse(address=' '.join(list(match))))
         if bool(_addrs):
             for item in _addrs:
                 address[item[1]].add(item[0])
