@@ -294,7 +294,7 @@ tabulate==0.8.5
 tbb==2019.0
 tempdir==0.7.1
 tensorboard==2.1.1
-tensorflow==2.0.0
+tensorflow==2.0.1
 tensorflow-cpu==2.1.0
 tensorflow-estimator==2.1.0
 tensorflow-hub==0.7.0
