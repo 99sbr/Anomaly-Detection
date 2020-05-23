@@ -10,8 +10,9 @@ import usaddress
 from spacy_stanza import StanzaLanguage
 from summarizer import Summarizer
 
-snlp = stanza.Pipeline(lang="en")
-stanza_nlp = StanzaLanguage(snlp)
+# snlp = stanza.Pipeline(lang="en")
+# stanza_nlp = StanzaLanguage(snlp)
+
 spacy_nlp = spacy.load('en_core_web_lg')
 stopwords = set(stopwords.words('english'))
 model = Summarizer()
@@ -30,7 +31,7 @@ def text_cleaning(raw_text, remove_stopwords=True):
     ]
     clean_sent = ' '.join(clean_sent_list)
     clean_sent = ' '.join(clean_sent.split())
-    doc = stanza_nlp(clean_sent)
+    doc = spacy_nlp(clean_sent)
 
     spacy_text_list = []
     for sent in doc.sents:
