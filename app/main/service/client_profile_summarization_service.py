@@ -6,7 +6,7 @@ from textblob import TextBlob
 
 from .base_services import text_cleaning, parse_article
 
-spacy_nlp = spacy.load('en_core_web_lg')
+spacy_nlp = spacy.load('en_core_web_sm')
 
 
 def gather_content_data(url_list):

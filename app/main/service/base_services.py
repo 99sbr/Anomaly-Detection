@@ -12,7 +12,7 @@ from summarizer import Summarizer
 # snlp = stanza.Pipeline(lang="en")
 # stanza_nlp = StanzaLanguage(snlp)
 
-spacy_nlp = spacy.load('en_core_web_lg')
+spacy_nlp = spacy.load('en_core_web_sm')
 from spacy.lang.en.stop_words import STOP_WORDS
 
 model = Summarizer()
