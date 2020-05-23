@@ -13,7 +13,7 @@ backcall==0.1.0
 bayesian-optimization==1.1.0
 bcrypt==3.1.7
 beautifulsoup4==4.9.0
-benepar==0.1.2
+
 bert-extractive-summarizer==0.4.0
 bleach==3.1.0
 blis==0.4.1
@@ -42,7 +42,8 @@ cssselect==1.1.0
 cufflinks==0.17.0
 cycler==0.10.0
 cymem==2.0.3
-Cython==0.29.14
+Cython
+benepar
 cytoolz==0.9.0.1
 dash==1.9.0
 dash-core-components==1.8.0
