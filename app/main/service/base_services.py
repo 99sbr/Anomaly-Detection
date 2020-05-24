@@ -24,7 +24,7 @@ def text_cleaning(raw_text, remove_stopwords=True):
             token for token in raw_text_list if token not in STOP_WORDS
         ]
     clean_sent_list = [
-        re.sub("[^A-Za-z0-9].\/", '', token) for token in raw_text_list
+        re.sub("[^A-Za-z0-9]./", '', token) for token in raw_text_list
         if bool(token)
     ]
     clean_sent = ' '.join(clean_sent_list)
