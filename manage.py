@@ -1,17 +1,14 @@
 import unittest
+
 from flask_script import Manager
+from waitress import serve
+
 from app import blueprint
 from app.main import create_app
-from waitress import serve
 
 app = create_app('test')
 app.register_blueprint(blueprint)
 manager = Manager(app)
-
-
-# migrate = Migrate(app, db)
-
-# manager.add_command('db', MigrateCommand)
 
 
 @manager.command

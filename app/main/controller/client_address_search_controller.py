@@ -17,8 +17,6 @@ class AddressSearch(Resource):
     Performs Address Search on Web Data for Client Profile
     """
 
-
-
     @api.doc("Get Client Address")
     @api.expect(payload, validate=True)
     def post(self):

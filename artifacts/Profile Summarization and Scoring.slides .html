@@ -2,24 +2,25 @@
 <html>
 <head>
 
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta charset="utf-8"/>
+    <meta content="chrome=1" http-equiv="X-UA-Compatible"/>
 
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/>
 
 
-<title>Profile Summarization and Scoring slides</title>
+    <title>Profile Summarization and Scoring slides</title>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
-<!-- General and theme style sheets -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/reveal.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/theme/simple.css" id="theme">
+    <!-- General and theme style sheets -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/reveal.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/theme/simple.css" id="theme"
+          rel="stylesheet">
 
-<!-- If the query includes 'print-pdf', include the PDF print sheet -->
-<script>
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
 if( window.location.search.match( /print-pdf/gi ) ) {
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
@@ -28,14 +29,15 @@ if( window.location.search.match( /print-pdf/gi ) ) {
         document.getElementsByTagName( 'head' )[0].appendChild( link );
 }
 
-</script>
 
-<!--[if lt IE 9]>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/lib/js/html5shiv.js"></script>
-<![endif]-->
+    </script>
 
-<!-- Loading the mathjax macro -->
-<!-- Load mathjax -->
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/lib/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Loading the mathjax macro -->
+    <!-- Load mathjax -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
@@ -54,13 +56,14 @@ if( window.location.search.match( /print-pdf/gi ) ) {
             linebreaks: { automatic: true }
         }
     });
+
     </script>
     <!-- End of mathjax configuration -->
 
-<!-- Get Font-awesome from cdn -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!-- Get Font-awesome from cdn -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
 
-<style type="text/css">
+    <style type="text/css">
     /*!
 *
 * Twitter Bootstrap
@@ -12996,8 +12999,9 @@ ul.typeahead-list  > li > a.pull-right {
   margin-top: 20px;
 }
 /*# sourceMappingURL=style.min.css.map */
+
     </style>
-<style type="text/css">
+    <style type="text/css">
     .highlight .hll { background-color: #ffffcc }
 .highlight  { background: #f8f8f8; }
 .highlight .c { color: #408080; font-style: italic } /* Comment */
@@ -13067,8 +13071,9 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
 .highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
+
     </style>
-<style type="text/css">
+    <style type="text/css">
     @font-face {
  font-family: "Source Code Pro";
  font-weight: normal;
@@ -16338,10 +16343,11 @@ div#maintoolbar {
     });
 </script>
     
+
     </style>
 
 
-<style type="text/css">
+    <style type="text/css">
 /* Overrides of notebook CSS for static HTML export */
 .reveal {
   font-size: 160%;
@@ -16456,10 +16462,11 @@ a.anchor-link {
 {
   background: #727272 !important;
 }
-</style>
 
-<!-- Custom stylesheet, it must be in the same directory as the html file -->
-<link rel="stylesheet" href="custom.css">
+    </style>
+
+    <!-- Custom stylesheet, it must be in the same directory as the html file -->
+    <link href="custom.css" rel="stylesheet">
 
 </head>
 
@@ -16468,21 +16475,32 @@ a.anchor-link {
 
 
 <div class="reveal">
-<div class="slides">
-<section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Import-Libraries-and-Models">Import Libraries and Models<a class="anchor-link" href="#Import-Libraries-and-Models">&#182;</a></h3>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[90]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pprint</span> <span class="k">import</span> <span class="n">pprint</span>
+    <div class="slides">
+        <section>
+            <section>
+                <div class="cell border-box-sizing text_cell rendered">
+                    <div class="prompt input_prompt">
+                    </div>
+                    <div class="inner_cell">
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <h3 id="Import-Libraries-and-Models">Import Libraries and Models<a class="anchor-link"
+                                                                                               href="#Import-Libraries-and-Models">&#182;</a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section>
+            <section>
+                <div class="cell border-box-sizing code_cell rendered">
+                    <div class="input">
+                        <div class="prompt input_prompt">In&nbsp;[90]:</div>
+                        <div class="inner_cell">
+                            <div class="input_area">
+                                <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span
+                                        class="nn">pprint</span> <span class="k">import</span> <span
+                                        class="n">pprint</span>
 <span class="kn">from</span> <span class="nn">spacy_stanza</span> <span class="k">import</span> <span class="n">StanzaLanguage</span>
 <span class="kn">import</span> <span class="nn">stanza</span>
 <span class="kn">import</span> <span class="nn">spacy</span>
@@ -16490,35 +16508,48 @@ a.anchor-link {
 <span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
 <span class="kn">import</span> <span class="nn">re</span>
 <span class="kn">import</span> <span class="nn">random</span>
-<span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="k">import</span> <span class="n">stopwords</span>
+<span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="k">import</span> <span
+                                            class="n">stopwords</span>
 <span class="kn">from</span> <span class="nn">nltk.cluster.util</span> <span class="k">import</span> <span class="n">cosine_distance</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
 <span class="kn">import</span> <span class="nn">requests</span>
-<span class="kn">from</span> <span class="nn">bs4</span> <span class="k">import</span> <span class="n">BeautifulSoup</span>
+<span class="kn">from</span> <span class="nn">bs4</span> <span class="k">import</span> <span
+                                            class="n">BeautifulSoup</span>
 <span class="kn">import</span> <span class="nn">html2text</span>
-<span class="kn">from</span> <span class="nn">summarizer</span> <span class="k">import</span> <span class="n">Summarizer</span>
-<span class="kn">from</span> <span class="nn">textblob</span> <span class="k">import</span> <span class="n">TextBlob</span>
-<span class="n">stop_words</span> <span class="o">=</span> <span class="n">stopwords</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;english&#39;</span><span class="p">)</span>
-<span class="n">snlp</span> <span class="o">=</span> <span class="n">stanza</span><span class="o">.</span><span class="n">Pipeline</span><span class="p">(</span><span class="n">lang</span><span class="o">=</span><span class="s2">&quot;en&quot;</span><span class="p">)</span>
-<span class="n">stanza_nlp</span> <span class="o">=</span> <span class="n">StanzaLanguage</span><span class="p">(</span><span class="n">snlp</span><span class="p">)</span>
-<span class="n">spacy_nlp</span> <span class="o">=</span> <span class="n">spacy</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;en_core_web_lg&#39;</span><span class="p">)</span>
-</pre></div>
+<span class="kn">from</span> <span class="nn">summarizer</span> <span class="k">import</span> <span
+                                            class="n">Summarizer</span>
+<span class="kn">from</span> <span class="nn">textblob</span> <span class="k">import</span> <span
+                                            class="n">TextBlob</span>
+<span class="n">stop_words</span> <span class="o">=</span> <span class="n">stopwords</span><span class="o">.</span><span
+                                            class="n">words</span><span class="p">(</span><span class="s1">&#39;english&#39;</span><span
+                                            class="p">)</span>
+<span class="n">snlp</span> <span class="o">=</span> <span class="n">stanza</span><span class="o">.</span><span
+                                            class="n">Pipeline</span><span class="p">(</span><span class="n">lang</span><span
+                                            class="o">=</span><span class="s2">&quot;en&quot;</span><span
+                                            class="p">)</span>
+<span class="n">stanza_nlp</span> <span class="o">=</span> <span class="n">StanzaLanguage</span><span class="p">(</span><span
+                                            class="n">snlp</span><span class="p">)</span>
+<span class="n">spacy_nlp</span> <span class="o">=</span> <span class="n">spacy</span><span class="o">.</span><span
+                                            class="n">load</span><span class="p">(</span><span class="s1">&#39;en_core_web_lg&#39;</span><span
+                                            class="p">)</span>
+</pre>
+                                </div>
 
-    </div>
-</div>
-</div>
+                            </div>
+                        </div>
+                    </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
+                    <div class="output_wrapper">
+                        <div class="output">
 
 
-<div class="output_subarea output_stream output_stderr output_text">
+                            <div class="output_area">
+
+                                <div class="prompt"></div>
+
+
+                                <div class="output_subarea output_stream output_stderr output_text">
 <pre>2020-05-05 16:12:23 INFO: Loading these models for language: en (English):
 =========================
 | Processor | Package   |
@@ -16538,181 +16569,321 @@ a.anchor-link {
 2020-05-05 16:12:25 INFO: Loading: ner
 2020-05-05 16:12:26 INFO: Done loading processors!
 </pre>
-</div>
-</div>
+                                </div>
+                            </div>
 
-</div>
-</div>
+                        </div>
+                    </div>
 
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Defining-Client-Profile-Summary-from-Documentum">Defining Client Profile Summary from Documentum<a class="anchor-link" href="#Defining-Client-Profile-Summary-from-Documentum">&#182;</a></h3>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fromkyc</span> <span class="o">=</span> <span class="s2">&quot;Holding company activities and collection center for FICOFI which is engaged in Import, Distribution and Sales of wines</span><span class="se">\</span>
-<span class="s2">and spirits. The group has also centralized its operations in Singapore and setup a global treasury/ collection centre based here.</span><span class="se">\</span>
-<span class="s2">The primary reason for this decision was that the group has lot of suppliers and clients who are commoon across various entities. When the</span><span class="se">\</span>
-<span class="s2">cliens make payments they usually make one lumpsum payment for various invoices. To ensure that they streamline the process for their clients,</span><span class="se">\</span>
+                </div>
+            </section>
+        </section>
+        <section>
+            <section>
+                <div class="cell border-box-sizing text_cell rendered">
+                    <div class="prompt input_prompt">
+                    </div>
+                    <div class="inner_cell">
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <h3 id="Defining-Client-Profile-Summary-from-Documentum">Defining Client Profile Summary
+                                from Documentum<a class="anchor-link"
+                                                  href="#Defining-Client-Profile-Summary-from-Documentum">&#182;</a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section>
+            <section>
+                <div class="cell border-box-sizing code_cell rendered">
+                    <div class="input">
+                        <div class="prompt input_prompt">In&nbsp;[2]:</div>
+                        <div class="inner_cell">
+                            <div class="input_area">
+                                <div class=" highlight hl-ipython3"><pre><span></span><span
+                                        class="n">fromkyc</span> <span class="o">=</span> <span class="s2">&quot;Holding company activities and collection center for FICOFI which is engaged in Import, Distribution and Sales of wines</span><span
+                                        class="se">\</span>
+<span class="s2">and spirits. The group has also centralized its operations in Singapore and setup a global treasury/ collection centre based here.</span><span
+                                            class="se">\</span>
+<span class="s2">The primary reason for this decision was that the group has lot of suppliers and clients who are commoon across various entities. When the</span><span
+                                            class="se">\</span>
+<span class="s2">cliens make payments they usually make one lumpsum payment for various invoices. To ensure that they streamline the process for their clients,</span><span
+                                            class="se">\</span>
 <span class="s2">ficofi has decides that they will start with centraliznig the collecttion process- collect funds from clients into accounts with SG.&quot;</span>
 
-<span class="n">kyc_doc</span> <span class="o">=</span> <span class="n">spacy_nlp</span><span class="p">(</span><span class="n">fromkyc</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
-</pre></div>
+<span class="n">kyc_doc</span> <span class="o">=</span> <span class="n">spacy_nlp</span><span class="p">(</span><span
+                                            class="n">fromkyc</span><span class="o">.</span><span class="n">strip</span><span
+                                            class="p">())</span>
+</pre>
+                                </div>
 
-    </div>
-</div>
-</div>
+                            </div>
+                        </div>
+                    </div>
 
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Source-URL-list-to-crawl">Source URL list to crawl<a class="anchor-link" href="#Source-URL-list-to-crawl">&#182;</a></h3>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[109]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">source_url_list</span> <span class="o">=</span> <span class="p">[</span> <span class="s2">&quot;https://recordowl.com/company/ficofi-partners-holding-pte-ltd&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;https://www.emis.com/php/company-profile/SG/Ficofi_Partners_Holding_Pte_Ltd_en_6690179.html&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;https://www.timesbusinessdirectory.com/companies/ficofi-partners-holding-pte-ltd&quot;</span><span class="p">,</span>
+                </div>
+            </section>
+        </section>
+        <section>
+            <section>
+                <div class="cell border-box-sizing text_cell rendered">
+                    <div class="prompt input_prompt">
+                    </div>
+                    <div class="inner_cell">
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <h3 id="Source-URL-list-to-crawl">Source URL list to crawl<a class="anchor-link"
+                                                                                         href="#Source-URL-list-to-crawl">&#182;</a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section>
+            <section>
+                <div class="cell border-box-sizing code_cell rendered">
+                    <div class="input">
+                        <div class="prompt input_prompt">In&nbsp;[109]:</div>
+                        <div class="inner_cell">
+                            <div class="input_area">
+                                <div class=" highlight hl-ipython3"><pre><span></span><span
+                                        class="n">source_url_list</span> <span class="o">=</span> <span
+                                        class="p">[</span> <span class="s2">&quot;https://recordowl.com/company/ficofi-partners-holding-pte-ltd&quot;</span><span
+                                        class="p">,</span>
+        <span class="s2">&quot;https://www.emis.com/php/company-profile/SG/Ficofi_Partners_Holding_Pte_Ltd_en_6690179.html&quot;</span><span
+                                            class="p">,</span>
+        <span class="s2">&quot;https://www.timesbusinessdirectory.com/companies/ficofi-partners-holding-pte-ltd&quot;</span><span
+                                            class="p">,</span>
         <span class="s2">&quot;https://opengovsg.com/corporate/201309826H&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;https://www.singaporecontacts.com/companies/ficofi-partners-holding-pte-ltd-singapore/84b81fc9-5b2b-e993-a43e-5b4acb7e0366&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;https://www.singaporecontacts.com/companies/ficofi-partners-holding-pte-ltd-singapore/84b81fc9-5b2b-e993-a43e-5b4acb7e0366&quot;</span><span
+                                            class="p">,</span>
         <span class="s2">&quot;https://singapore-corp.com/co/ficofi-partners-holding-pte-ltd&quot;</span>
 <span class="p">]</span>
-</pre></div>
+</pre>
+                                </div>
 
-    </div>
-</div>
-</div>
+                            </div>
+                        </div>
+                    </div>
 
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="HTML-Parsing-and-Text-Cleaning">HTML Parsing and Text Cleaning<a class="anchor-link" href="#HTML-Parsing-and-Text-Cleaning">&#182;</a></h3>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[110]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">text_cleaning</span><span class="p">(</span><span class="n">raw_text</span><span class="p">):</span>
-    <span class="n">raw_text_list</span> <span class="o">=</span> <span class="n">raw_text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+                </div>
+            </section>
+        </section>
+        <section>
+            <section>
+                <div class="cell border-box-sizing text_cell rendered">
+                    <div class="prompt input_prompt">
+                    </div>
+                    <div class="inner_cell">
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <h3 id="HTML-Parsing-and-Text-Cleaning">HTML Parsing and Text Cleaning<a class="anchor-link"
+                                                                                                     href="#HTML-Parsing-and-Text-Cleaning">&#182;</a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section>
+            <section>
+                <div class="cell border-box-sizing code_cell rendered">
+                    <div class="input">
+                        <div class="prompt input_prompt">In&nbsp;[110]:</div>
+                        <div class="inner_cell">
+                            <div class="input_area">
+                                <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span
+                                        class="nf">text_cleaning</span><span class="p">(</span><span
+                                        class="n">raw_text</span><span class="p">):</span>
+    <span class="n">raw_text_list</span> <span class="o">=</span> <span class="n">raw_text</span><span
+                                            class="o">.</span><span class="n">split</span><span class="p">(</span><span
+                                            class="s1">&#39;</span><span class="se">\n</span><span
+                                            class="s1">&#39;</span><span class="p">)</span>
 <span class="c1">#     raw_text_list = [</span>
 <span class="c1">#         token for token in raw_text_list if token not in stop_words</span>
 <span class="c1">#     ]</span>
     <span class="n">clean_sent_list</span> <span class="o">=</span> <span class="p">[</span>
-        <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;[^A-Za-z0-9]+\.-/&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">token</span><span class="p">)</span> <span class="k">for</span> <span class="n">token</span> <span class="ow">in</span> <span class="n">raw_text_list</span>
-        <span class="k">if</span> <span class="nb">bool</span><span class="p">(</span><span class="n">token</span><span class="p">)</span>
+        <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span
+                                            class="s1">&#39;[^A-Za-z0-9]+\.-/&#39;</span><span class="p">,</span> <span
+                                            class="s1">&#39;&#39;</span><span class="p">,</span> <span
+                                            class="n">token</span><span class="p">)</span> <span
+                                            class="k">for</span> <span class="n">token</span> <span class="ow">in</span> <span
+                                            class="n">raw_text_list</span>
+        <span class="k">if</span> <span class="nb">bool</span><span class="p">(</span><span class="n">token</span><span
+                                            class="p">)</span>
     <span class="p">]</span>
-    <span class="n">clean_sent</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">clean_sent_list</span><span class="p">)</span>
-    <span class="n">clean_sent</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">clean_sent</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
-    <span class="n">doc</span> <span class="o">=</span> <span class="n">stanza_nlp</span><span class="p">(</span><span class="n">clean_sent</span><span class="p">)</span>
+    <span class="n">clean_sent</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span
+                                            class="o">.</span><span class="n">join</span><span class="p">(</span><span
+                                            class="n">clean_sent_list</span><span class="p">)</span>
+    <span class="n">clean_sent</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span
+                                            class="o">.</span><span class="n">join</span><span class="p">(</span><span
+                                            class="n">clean_sent</span><span class="o">.</span><span
+                                            class="n">split</span><span class="p">())</span>
+    <span class="n">doc</span> <span class="o">=</span> <span class="n">stanza_nlp</span><span class="p">(</span><span
+                                            class="n">clean_sent</span><span class="p">)</span>
 
     <span class="n">spacy_text_list</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">sent</span> <span class="ow">in</span> <span class="n">doc</span><span class="o">.</span><span class="n">sents</span><span class="p">:</span>
-        <span class="n">spacy_text_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sent</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">sent</span> <span class="ow">in</span> <span class="n">doc</span><span
+                                            class="o">.</span><span class="n">sents</span><span class="p">:</span>
+        <span class="n">spacy_text_list</span><span class="o">.</span><span class="n">append</span><span
+                                            class="p">(</span><span class="n">sent</span><span class="o">.</span><span
+                                            class="n">text</span><span class="p">)</span>
     <span class="kn">import</span> <span class="nn">random</span>
     <span class="c1">#     spacy_text_list = random.sample(spacy_text_list, len(spacy_text_list))</span>
     <span class="k">return</span> <span class="n">spacy_text_list</span>
 
 
-<span class="k">def</span> <span class="nf">tag2text</span><span class="p">(</span><span class="n">tag</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">tag2text</span><span class="p">(</span><span class="n">tag</span><span
+                                            class="p">):</span>
 
-    <span class="k">if</span> <span class="n">tag</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s1">&#39;p&#39;</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">tag</span><span class="o">.</span><span class="n">name</span> <span
+                                            class="o">==</span> <span class="s1">&#39;p&#39;</span><span
+                                            class="p">:</span>
         <span class="k">return</span> <span class="n">tag</span><span class="o">.</span><span class="n">text</span>
 
 
-<span class="k">def</span> <span class="nf">parse_article</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
-    <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">parse_article</span><span class="p">(</span><span class="n">text</span><span
+                                            class="p">):</span>
+    <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span
+                                            class="p">(</span><span class="n">text</span><span class="p">,</span> <span
+                                            class="s1">&#39;html.parser&#39;</span><span class="p">)</span>
 
     <span class="c1"># find the article title</span>
-    <span class="n">h1</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;h1&#39;</span><span class="p">)</span>
+    <span class="n">h1</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span
+                                            class="n">find</span><span class="p">(</span><span
+                                            class="s1">&#39;h1&#39;</span><span class="p">)</span>
 
     <span class="c1"># find the common parent for &lt;h1&gt; and all &lt;p&gt;s.</span>
     <span class="n">root</span> <span class="o">=</span> <span class="n">h1</span>
-    <span class="k">while</span> <span class="n">root</span><span class="o">.</span><span class="n">name</span> <span class="o">!=</span> <span class="s1">&#39;body&#39;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">root</span><span class="o">.</span><span class="n">parent</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="k">while</span> <span class="n">root</span><span class="o">.</span><span class="n">name</span> <span
+                                            class="o">!=</span> <span class="s1">&#39;body&#39;</span><span
+                                            class="p">:</span>
+        <span class="k">if</span> <span class="n">root</span><span class="o">.</span><span class="n">parent</span> <span
+                                            class="o">==</span> <span class="kc">None</span><span class="p">:</span>
             <span class="k">break</span>
-        <span class="n">root</span> <span class="o">=</span> <span class="n">root</span><span class="o">.</span><span class="n">parent</span>
+        <span class="n">root</span> <span class="o">=</span> <span class="n">root</span><span class="o">.</span><span
+                                            class="n">parent</span>
 
     <span class="c1"># find all the content elements.</span>
-    <span class="n">ps</span> <span class="o">=</span> <span class="n">root</span><span class="o">.</span><span class="n">find_all</span><span class="p">([</span><span class="s1">&#39;h2&#39;</span><span class="p">,</span> <span class="s1">&#39;h3&#39;</span><span class="p">,</span> <span class="s1">&#39;h4&#39;</span><span class="p">,</span> <span class="s1">&#39;h5&#39;</span><span class="p">,</span> <span class="s1">&#39;h6&#39;</span><span class="p">,</span> <span class="s1">&#39;p&#39;</span><span class="p">,</span> <span class="s1">&#39;pre&#39;</span><span class="p">])</span>
-    <span class="n">ps</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">h1</span><span class="p">)</span>
-    <span class="n">content</span> <span class="o">=</span> <span class="p">[</span><span class="n">tag2text</span><span class="p">(</span><span class="n">p</span><span class="p">)</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">ps</span><span class="p">]</span>
-    <span class="n">content</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">content</span> <span class="k">if</span> <span class="nb">bool</span><span class="p">(</span><span class="n">x</span><span class="p">)]</span>
+    <span class="n">ps</span> <span class="o">=</span> <span class="n">root</span><span class="o">.</span><span
+                                            class="n">find_all</span><span class="p">([</span><span class="s1">&#39;h2&#39;</span><span
+                                            class="p">,</span> <span class="s1">&#39;h3&#39;</span><span
+                                            class="p">,</span> <span class="s1">&#39;h4&#39;</span><span
+                                            class="p">,</span> <span class="s1">&#39;h5&#39;</span><span
+                                            class="p">,</span> <span class="s1">&#39;h6&#39;</span><span
+                                            class="p">,</span> <span class="s1">&#39;p&#39;</span><span
+                                            class="p">,</span> <span class="s1">&#39;pre&#39;</span><span
+                                            class="p">])</span>
+    <span class="n">ps</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span
+                                            class="mi">0</span><span class="p">,</span> <span class="n">h1</span><span
+                                            class="p">)</span>
+    <span class="n">content</span> <span class="o">=</span> <span class="p">[</span><span class="n">tag2text</span><span
+                                            class="p">(</span><span class="n">p</span><span class="p">)</span> <span
+                                            class="k">for</span> <span class="n">p</span> <span
+                                            class="ow">in</span> <span class="n">ps</span><span class="p">]</span>
+    <span class="n">content</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span
+                                            class="k">for</span> <span class="n">x</span> <span
+                                            class="ow">in</span> <span class="n">content</span> <span
+                                            class="k">if</span> <span class="nb">bool</span><span
+                                            class="p">(</span><span class="n">x</span><span class="p">)]</span>
     <span class="k">return</span> <span class="n">content</span>
-</pre></div>
+</pre>
+                                </div>
 
-    </div>
-</div>
-</div>
+                            </div>
+                        </div>
+                    </div>
 
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Creating-Corpus-of-Information-from-WEB">Creating Corpus of Information from WEB<a class="anchor-link" href="#Creating-Corpus-of-Information-from-WEB">&#182;</a></h3>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[111]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">gather_content_data</span><span class="p">(</span><span class="n">url_list</span><span class="p">):</span>
-    <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">url_list</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span>
+                </div>
+            </section>
+        </section>
+        <section>
+            <section>
+                <div class="cell border-box-sizing text_cell rendered">
+                    <div class="prompt input_prompt">
+                    </div>
+                    <div class="inner_cell">
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <h3 id="Creating-Corpus-of-Information-from-WEB">Creating Corpus of Information from WEB<a
+                                    class="anchor-link" href="#Creating-Corpus-of-Information-from-WEB">&#182;</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section>
+            <section>
+                <div class="cell border-box-sizing code_cell rendered">
+                    <div class="input">
+                        <div class="prompt input_prompt">In&nbsp;[111]:</div>
+                        <div class="inner_cell">
+                            <div class="input_area">
+                                <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span
+                                        class="nf">gather_content_data</span><span class="p">(</span><span class="n">url_list</span><span
+                                        class="p">):</span>
+    <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span
+                                            class="n">url_list</span><span class="p">)</span> <span
+                                            class="o">&gt;</span> <span class="mi">0</span>
     <span class="n">corpus</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">url</span> <span class="ow">in</span> <span class="n">url_list</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">url</span> <span class="ow">in</span> <span
+                                            class="n">url_list</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-        <span class="n">content</span> <span class="o">=</span> <span class="n">parse_article</span><span class="p">(</span><span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
-        <span class="k">if</span> <span class="nb">bool</span><span class="p">(</span><span class="n">content</span><span class="p">):</span>
-            <span class="n">corpus</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">content</span><span class="p">))</span>
-    <span class="n">spacy_text_list</span> <span class="o">=</span> <span class="n">text_cleaning</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">corpus</span><span class="p">))</span>
-    <span class="k">return</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">spacy_text_list</span><span class="p">)</span>
-</pre></div>
+        <span class="n">content</span> <span class="o">=</span> <span class="n">parse_article</span><span
+                                            class="p">(</span><span class="n">requests</span><span
+                                            class="o">.</span><span class="n">get</span><span class="p">(</span><span
+                                            class="n">url</span><span class="p">)</span><span class="o">.</span><span
+                                            class="n">text</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">bool</span><span class="p">(</span><span
+                                            class="n">content</span><span class="p">):</span>
+            <span class="n">corpus</span><span class="o">.</span><span class="n">append</span><span
+                                            class="p">(</span><span class="s1">&#39; &#39;</span><span
+                                            class="o">.</span><span class="n">join</span><span class="p">(</span><span
+                                            class="n">content</span><span class="p">))</span>
+    <span class="n">spacy_text_list</span> <span class="o">=</span> <span class="n">text_cleaning</span><span class="p">(</span><span
+                                            class="s1">&#39; &#39;</span><span class="o">.</span><span
+                                            class="n">join</span><span class="p">(</span><span
+                                            class="n">corpus</span><span class="p">))</span>
+    <span class="k">return</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span
+                                            class="p">(</span><span class="n">spacy_text_list</span><span
+                                            class="p">)</span>
+</pre>
+                                </div>
 
-    </div>
-</div>
-</div>
+                            </div>
+                        </div>
+                    </div>
 
-</div></section></section><section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[112]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">corpus</span> <span class="o">=</span> <span class="n">gather_content_data</span><span class="p">(</span><span class="n">url_list</span><span class="o">=</span><span class="n">source_url_list</span><span class="p">)</span>
-</pre></div>
+                </div>
+            </section>
+        </section>
+        <section>
+            <section>
+                <div class="cell border-box-sizing code_cell rendered">
+                    <div class="input">
+                        <div class="prompt input_prompt">In&nbsp;[112]:</div>
+                        <div class="inner_cell">
+                            <div class="input_area">
+                                <div class=" highlight hl-ipython3"><pre><span></span><span
+                                        class="n">corpus</span> <span class="o">=</span> <span class="n">gather_content_data</span><span
+                                        class="p">(</span><span class="n">url_list</span><span class="o">=</span><span
+                                        class="n">source_url_list</span><span class="p">)</span>
+</pre>
+                                </div>
 
-    </div>
-</div>
-</div>
+                            </div>
+                        </div>
+                    </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
+                    <div class="output_wrapper">
+                        <div class="output">
 
 
-<div class="output_subarea output_stream output_stdout output_text">
+                            <div class="output_area">
+
+                                <div class="prompt"></div>
+
+
+                                <div class="output_subarea output_stream output_stdout output_text">
 <pre>https://recordowl.com/company/ficofi-partners-holding-pte-ltd
 https://www.emis.com/php/company-profile/SG/Ficofi_Partners_Holding_Pte_Ltd_en_6690179.html
 https://www.timesbusinessdirectory.com/companies/ficofi-partners-holding-pte-ltd
@@ -16720,380 +16891,495 @@ https://opengovsg.com/corporate/201309826H
 https://www.singaporecontacts.com/companies/ficofi-partners-holding-pte-ltd-singapore/84b81fc9-5b2b-e993-a43e-5b4acb7e0366
 https://singapore-corp.com/co/ficofi-partners-holding-pte-ltd
 </pre>
-</div>
-</div>
+                                </div>
+                            </div>
 
-</div>
-</div>
+                        </div>
+                    </div>
 
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[128]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">corpus</span>
-</pre></div>
+                </div>
+                <div class="cell border-box-sizing code_cell rendered">
+                    <div class="input">
+                        <div class="prompt input_prompt">In&nbsp;[128]:</div>
+                        <div class="inner_cell">
+                            <div class="input_area">
+                                <div class=" highlight hl-ipython3"><pre><span></span><span class="n">corpus</span>
+</pre>
+                                </div>
 
-    </div>
-</div>
-</div>
+                            </div>
+                        </div>
+                    </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[128]:</div>
+                    <div class="output_wrapper">
+                        <div class="output">
 
 
+                            <div class="output_area">
+
+                                <div class="prompt output_prompt">Out[128]:</div>
 
 
-<div class="output_text output_subarea output_execute_result">
-<pre>&#39;Registration No. / Unique Entity Number: 201309826H FICOFI PARTNERS HOLDING PTE. LTD. (the &#34;Company&#34;) The Company is a PRIVATE COMPANY LIMITED BY SHARES and it\&#39;s current status is Live Company. The company was registered / incorporated on 12 April 2013 (Friday), 7 years ago The address of this company registered office is 25 INTERNATIONAL BUSINESS PARK #03-01/02 GERMAN CENTRE SINGAPORE 609916 The company has 7 officers / owners / shareholders. The company principal activity is OTHER HOLDING COMPANIES. The company secondary activity is MANAGEMENT CONSULTANCY SERVICES N.E.C.. Ficofi Partners Holding Pte. Ltd. is an enterprise located in Singapore, with the main office in Singapore. It operates in the Management of Companies and Enterprises sector. It was incorporated on April 12, 2013. Headquarters 25 International Business Park #03-01/02 German Centre Singapore 609916 Singapore; Singapore; Postal Code: 609916 Contact Details: Purchase the Ficofi Partners Holding Pte. Ltd. report to view the information. EMIS company profiles are part of a larger information service which combines company, industry and country data and analysis for over 145 emerging markets. To view more information, Request a demonstration of the EMIS service FICOFI PARTNERS HOLDING PTE LTD 25 International Business Park #03-01/02 German Centre Singapore 609916 Copyright © 2020. Marshall Cavendish Business Information Pte Ltd. All Rights Reserved. FICOFI PARTNERS HOLDING PTE. LTD. (UEN ID 201309826H) is a corporate entity registered with Accounting and Corporate Regulatory Authority. The UEN issue date is April 13, 2013. The entity status is Live Company. Please comment or provide details below to improve the information on . This dataset includes 1.5 million corporate entities registered with Accounting and Corporate Regulatory Authority (ACRA), Singapore. Each entity is registered with unique entity number (UEN), entity name, entity time, UEN issue date, location, etc. HOT LEADS / LISTS HR Managers eMail Lists HR Managers Database HR-VP, Directors Database Finance Managers eMail Lists Finance Managers Database IT Managers eMail Lists IT Managers Database CIO / CTO Database CFO / Director - Finance eMail Lists CFO / Director - Finance Database Sales Managers eMail Lists Sales Managers Database Sales-VP, Director Database CEO, President, MD eMail Lists Directors (Share Holding) eMail Lists Marketing Managers eMail Lists Marketing Managers Database Marketing-VP, Director Database CEO, President, MD Database Directors (Share Holding) Database Home | Enquiry | FAQ | Contact Copyright © 2020 Singapore Contacts. All Rights Reserved.&#39;</pre>
-</div>
+                                <div class="output_text output_subarea output_execute_result">
+                                    <pre>&#39;Registration No. / Unique Entity Number: 201309826H FICOFI PARTNERS HOLDING PTE. LTD. (the &#34;Company&#34;) The Company is a PRIVATE COMPANY LIMITED BY SHARES and it\&#39;s current status is Live Company. The company was registered / incorporated on 12 April 2013 (Friday), 7 years ago The address of this company registered office is 25 INTERNATIONAL BUSINESS PARK #03-01/02 GERMAN CENTRE SINGAPORE 609916 The company has 7 officers / owners / shareholders. The company principal activity is OTHER HOLDING COMPANIES. The company secondary activity is MANAGEMENT CONSULTANCY SERVICES N.E.C.. Ficofi Partners Holding Pte. Ltd. is an enterprise located in Singapore, with the main office in Singapore. It operates in the Management of Companies and Enterprises sector. It was incorporated on April 12, 2013. Headquarters 25 International Business Park #03-01/02 German Centre Singapore 609916 Singapore; Singapore; Postal Code: 609916 Contact Details: Purchase the Ficofi Partners Holding Pte. Ltd. report to view the information. EMIS company profiles are part of a larger information service which combines company, industry and country data and analysis for over 145 emerging markets. To view more information, Request a demonstration of the EMIS service FICOFI PARTNERS HOLDING PTE LTD 25 International Business Park #03-01/02 German Centre Singapore 609916 Copyright © 2020. Marshall Cavendish Business Information Pte Ltd. All Rights Reserved. FICOFI PARTNERS HOLDING PTE. LTD. (UEN ID 201309826H) is a corporate entity registered with Accounting and Corporate Regulatory Authority. The UEN issue date is April 13, 2013. The entity status is Live Company. Please comment or provide details below to improve the information on . This dataset includes 1.5 million corporate entities registered with Accounting and Corporate Regulatory Authority (ACRA), Singapore. Each entity is registered with unique entity number (UEN), entity name, entity time, UEN issue date, location, etc. HOT LEADS / LISTS HR Managers eMail Lists HR Managers Database HR-VP, Directors Database Finance Managers eMail Lists Finance Managers Database IT Managers eMail Lists IT Managers Database CIO / CTO Database CFO / Director - Finance eMail Lists CFO / Director - Finance Database Sales Managers eMail Lists Sales Managers Database Sales-VP, Director Database CEO, President, MD eMail Lists Directors (Share Holding) eMail Lists Marketing Managers eMail Lists Marketing Managers Database Marketing-VP, Director Database CEO, President, MD Database Directors (Share Holding) Database Home | Enquiry | FAQ | Contact Copyright © 2020 Singapore Contacts. All Rights Reserved.&#39;</pre>
+                                </div>
 
-</div>
+                            </div>
 
-</div>
-</div>
+                        </div>
+                    </div>
 
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="BERT-based-Text-Summarization">BERT based Text Summarization<a class="anchor-link" href="#BERT-based-Text-Summarization">&#182;</a></h3>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[114]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">Summarizer</span><span class="p">()</span>
-</pre></div>
+                </div>
+            </section>
+        </section>
+        <section>
+            <section>
+                <div class="cell border-box-sizing text_cell rendered">
+                    <div class="prompt input_prompt">
+                    </div>
+                    <div class="inner_cell">
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <h3 id="BERT-based-Text-Summarization">BERT based Text Summarization<a class="anchor-link"
+                                                                                                   href="#BERT-based-Text-Summarization">&#182;</a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section>
+            <section>
+                <div class="cell border-box-sizing code_cell rendered">
+                    <div class="input">
+                        <div class="prompt input_prompt">In&nbsp;[114]:</div>
+                        <div class="inner_cell">
+                            <div class="input_area">
+                                <div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span> <span
+                                        class="o">=</span> <span class="n">Summarizer</span><span class="p">()</span>
+</pre>
+                                </div>
 
-    </div>
-</div>
-</div>
+                            </div>
+                        </div>
+                    </div>
 
-</div></section></section><section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[129]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">corpus</span><span class="p">,</span> <span class="n">min_length</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">algorithm</span><span class="o">=</span><span class="s1">&#39;gmm&#39;</span><span class="p">,</span><span class="n">ratio</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">max_length</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">corpus</span><span class="p">))</span>
-<span class="n">full</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+                </div>
+            </section>
+        </section>
+        <section>
+            <section>
+                <div class="cell border-box-sizing code_cell rendered">
+                    <div class="input">
+                        <div class="prompt input_prompt">In&nbsp;[129]:</div>
+                        <div class="inner_cell">
+                            <div class="input_area">
+                                <div class=" highlight hl-ipython3"><pre><span></span><span
+                                        class="n">result</span> <span class="o">=</span> <span
+                                        class="n">model</span><span class="p">(</span><span class="n">corpus</span><span
+                                        class="p">,</span> <span class="n">min_length</span><span
+                                        class="o">=</span><span class="mi">30</span><span class="p">,</span> <span
+                                        class="n">algorithm</span><span class="o">=</span><span
+                                        class="s1">&#39;gmm&#39;</span><span class="p">,</span><span
+                                        class="n">ratio</span><span class="o">=</span><span class="mf">0.5</span><span
+                                        class="p">,</span> <span class="n">max_length</span><span
+                                        class="o">=</span><span class="nb">len</span><span class="p">(</span><span
+                                        class="n">corpus</span><span class="p">))</span>
+<span class="n">full</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span
+                                            class="n">join</span><span class="p">(</span><span
+                                            class="n">result</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">full</span><span class="p">)</span>
-<span class="n">testimonial</span> <span class="o">=</span> <span class="n">TextBlob</span><span class="p">(</span><span class="n">full</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1"> Polarity of Article:&#39;</span><span class="p">,</span> <span class="n">testimonial</span><span class="o">.</span><span class="n">sentiment</span><span class="o">.</span><span class="n">polarity</span><span class="p">)</span>
-</pre></div>
+<span class="n">testimonial</span> <span class="o">=</span> <span class="n">TextBlob</span><span class="p">(</span><span
+                                            class="n">full</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span
+                                            class="s1"> Polarity of Article:&#39;</span><span class="p">,</span> <span
+                                            class="n">testimonial</span><span class="o">.</span><span class="n">sentiment</span><span
+                                            class="o">.</span><span class="n">polarity</span><span class="p">)</span>
+</pre>
+                                </div>
 
-    </div>
-</div>
-</div>
+                            </div>
+                        </div>
+                    </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
+                    <div class="output_wrapper">
+                        <div class="output">
 
 
-<div class="output_subarea output_stream output_stdout output_text">
+                            <div class="output_area">
+
+                                <div class="prompt"></div>
+
+
+                                <div class="output_subarea output_stream output_stdout output_text">
 <pre>Unique Entity Number: 201309826H FICOFI PARTNERS HOLDING PTE. The company was registered / incorporated on 12 April 2013 (Friday), 7 years ago The address of this company registered office is 25 INTERNATIONAL BUSINESS PARK #03-01/02 GERMAN CENTRE SINGAPORE 609916 The company has 7 officers / owners / shareholders. Ltd. is an enterprise located in Singapore, with the main office in Singapore. It was incorporated on April 12, 2013. Ltd. report to view the information. EMIS company profiles are part of a larger information service which combines company, industry and country data and analysis for over 145 emerging markets. To view more information, Request a demonstration of the EMIS service FICOFI PARTNERS HOLDING PTE LTD 25 International Business Park #03-01/02 German Centre Singapore 609916 Copyright © 2020. Marshall Cavendish Business Information Pte Ltd. All Rights Reserved. The entity status is Live Company. Please comment or provide details below to improve the information on . HOT LEADS / LISTS HR Managers eMail Lists HR Managers Database HR-VP, Directors Database Finance Managers eMail Lists Finance Managers Database IT Managers eMail Lists IT Managers Database CIO / CTO Database CFO / Director - Finance eMail Lists CFO / Director - Finance Database Sales Managers eMail Lists Sales Managers Database Sales-VP, Director Database CEO, President, MD eMail Lists Directors (Share Holding) eMail Lists Marketing Managers eMail Lists Marketing Managers Database Marketing-VP, Director Database CEO, President, MD Database Directors (Share Holding) Database Home | Enquiry | FAQ | Contact Copyright © 2020 Singapore Contacts.
 
  Polarity of Article: 0.14280303030303027
 </pre>
-</div>
-</div>
+                                </div>
+                            </div>
 
-</div>
-</div>
+                        </div>
+                    </div>
 
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Similarity-Score-Calculation-using-spaCy">Similarity Score Calculation using spaCy<a class="anchor-link" href="#Similarity-Score-Calculation-using-spaCy">&#182;</a></h3>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[116]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">extraction</span> <span class="o">=</span> <span class="n">spacy_nlp</span><span class="p">(</span><span class="n">full</span><span class="p">)</span>
-<span class="n">similarity_score</span> <span class="o">=</span> <span class="n">extraction</span><span class="o">.</span><span class="n">similarity</span><span class="p">(</span><span class="n">kyc_doc</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The Similarity Score of Summarized Text is: &#39;</span><span class="p">,</span> <span class="n">similarity_score</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span>
-</pre></div>
+                </div>
+            </section>
+        </section>
+        <section>
+            <section>
+                <div class="cell border-box-sizing text_cell rendered">
+                    <div class="prompt input_prompt">
+                    </div>
+                    <div class="inner_cell">
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <h3 id="Similarity-Score-Calculation-using-spaCy">Similarity Score Calculation using spaCy<a
+                                    class="anchor-link" href="#Similarity-Score-Calculation-using-spaCy">&#182;</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section>
+            <section>
+                <div class="cell border-box-sizing code_cell rendered">
+                    <div class="input">
+                        <div class="prompt input_prompt">In&nbsp;[116]:</div>
+                        <div class="inner_cell">
+                            <div class="input_area">
+                                <div class=" highlight hl-ipython3"><pre><span></span><span class="n">extraction</span> <span
+                                        class="o">=</span> <span class="n">spacy_nlp</span><span class="p">(</span><span
+                                        class="n">full</span><span class="p">)</span>
+<span class="n">similarity_score</span> <span class="o">=</span> <span class="n">extraction</span><span
+                                            class="o">.</span><span class="n">similarity</span><span
+                                            class="p">(</span><span class="n">kyc_doc</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The Similarity Score of Summarized Text is: &#39;</span><span
+                                            class="p">,</span> <span class="n">similarity_score</span><span
+                                            class="o">*</span><span class="mi">100</span><span class="p">)</span>
+</pre>
+                                </div>
 
-    </div>
-</div>
-</div>
+                            </div>
+                        </div>
+                    </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
+                    <div class="output_wrapper">
+                        <div class="output">
 
 
-<div class="output_subarea output_stream output_stdout output_text">
+                            <div class="output_area">
+
+                                <div class="prompt"></div>
+
+
+                                <div class="output_subarea output_stream output_stdout output_text">
 <pre>The Similarity Score of Summarized Text is:  88.07950034132232
 </pre>
-</div>
-</div>
+                                </div>
+                            </div>
 
-</div>
-</div>
+                        </div>
+                    </div>
 
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[63]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+                </div>
+                <div class="cell border-box-sizing code_cell rendered">
+                    <div class="input">
+                        <div class="prompt input_prompt">In&nbsp;[63]:</div>
+                        <div class="inner_cell">
+                            <div class="input_area">
+                                <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">China Sci-Tech Holdings Ltd</span>
 <span class="sd">American express singapore</span>
 <span class="sd">DHL Express singapore</span>
 <span class="sd">Hitachi captial asia pacific pvt ltd</span>
 <span class="sd">&quot;&quot;&quot;</span>
-</pre></div>
+</pre>
+                                </div>
 
-    </div>
-</div>
-</div>
+                            </div>
+                        </div>
+                    </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[63]:</div>
+                    <div class="output_wrapper">
+                        <div class="output">
 
 
+                            <div class="output_area">
+
+                                <div class="prompt output_prompt">Out[63]:</div>
 
 
-<div class="output_text output_subarea output_execute_result">
-<pre>&#39;\nChina Sci-Tech Holdings Ltd\nAmerican express singapore\nDHL Express singapore\nHitachi captial asia pacific pvt ltd\n&#39;</pre>
-</div>
+                                <div class="output_text output_subarea output_execute_result">
+                                    <pre>&#39;\nChina Sci-Tech Holdings Ltd\nAmerican express singapore\nDHL Express singapore\nHitachi captial asia pacific pvt ltd\n&#39;</pre>
+                                </div>
 
-</div>
+                            </div>
 
-</div>
-</div>
+                        </div>
+                    </div>
 
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Hitting-Profile-Summarizarion-API">Hitting Profile Summarizarion API<a class="anchor-link" href="#Hitting-Profile-Summarizarion-API">&#182;</a></h3>
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[81]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">request_url</span> <span class="o">=</span><span class="s2">&quot;http://0.0.0.0:1234/client/get-summary&quot;</span>
-</pre></div>
+                </div>
+            </section>
+        </section>
+        <section>
+            <section>
+                <div class="cell border-box-sizing text_cell rendered">
+                    <div class="prompt input_prompt">
+                    </div>
+                    <div class="inner_cell">
+                        <div class="text_cell_render border-box-sizing rendered_html">
+                            <h3 id="Hitting-Profile-Summarizarion-API">Hitting Profile Summarizarion API<a
+                                    class="anchor-link" href="#Hitting-Profile-Summarizarion-API">&#182;</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="fragment">
+                    <div class="cell border-box-sizing code_cell rendered">
+                        <div class="input">
+                            <div class="prompt input_prompt">In&nbsp;[81]:</div>
+                            <div class="inner_cell">
+                                <div class="input_area">
+                                    <div class=" highlight hl-ipython3"><pre><span></span><span
+                                            class="n">request_url</span> <span class="o">=</span><span class="s2">&quot;http://0.0.0.0:1234/client/get-summary&quot;</span>
+</pre>
+                                    </div>
 
-    </div>
-</div>
-</div>
+                                </div>
+                            </div>
+                        </div>
 
-</div></div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[104]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">input_data</span> <span class="o">=</span> <span class="p">{</span>
+                    </div>
+                </div>
+                <div class="fragment">
+                    <div class="cell border-box-sizing code_cell rendered">
+                        <div class="input">
+                            <div class="prompt input_prompt">In&nbsp;[104]:</div>
+                            <div class="inner_cell">
+                                <div class="input_area">
+                                    <div class=" highlight hl-ipython3"><pre><span></span><span
+                                            class="n">input_data</span> <span class="o">=</span> <span
+                                            class="p">{</span>
     <span class="s2">&quot;KYC-Documentum&quot;</span><span class="p">:</span>
-    <span class="s2">&quot;Holding company activities and collection center for FICOFI which is engaged in Import, Distribution and Sales of wines and spirits. The group has also centralized its operations in Singapore and setup a global treasury/ collection center based here.The primary reason for this decision was that the group has lot of suppliers and clients who are commoon across various entities. When thecliens make payments they usually make one lumpsum payment for various invoices. To ensure that they streamline the process for their clients,ficofi has decides that they will start with centraliznig the collecttion process- collect funds from clients into accounts with SG.&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Holding company activities and collection center for FICOFI which is engaged in Import, Distribution and Sales of wines and spirits. The group has also centralized its operations in Singapore and setup a global treasury/ collection center based here.The primary reason for this decision was that the group has lot of suppliers and clients who are commoon across various entities. When thecliens make payments they usually make one lumpsum payment for various invoices. To ensure that they streamline the process for their clients,ficofi has decides that they will start with centraliznig the collecttion process- collect funds from clients into accounts with SG.&quot;</span><span
+                                                class="p">,</span>
     <span class="s2">&quot;SearchUrlList&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="s2">&quot;https://recordowl.com/company/ficofi-partners-holding-pte-ltd&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;https://www.emis.com/php/company-profile/SG/Ficofi_Partners_Holding_Pte_Ltd_en_6690179.html&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;https://www.timesbusinessdirectory.com/companies/ficofi-partners-holding-pte-ltd&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;https://recordowl.com/company/ficofi-partners-holding-pte-ltd&quot;</span><span
+                                                class="p">,</span>
+        <span class="s2">&quot;https://www.emis.com/php/company-profile/SG/Ficofi_Partners_Holding_Pte_Ltd_en_6690179.html&quot;</span><span
+                                                class="p">,</span>
+        <span class="s2">&quot;https://www.timesbusinessdirectory.com/companies/ficofi-partners-holding-pte-ltd&quot;</span><span
+                                                class="p">,</span>
         <span class="s2">&quot;https://opengovsg.com/corporate/201309826H&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;https://www.singaporecontacts.com/companies/ficofi-partners-holding-pte-ltd-singapore/84b81fc9-5b2b-e993-a43e-5b4acb7e0366&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;https://www.singaporecontacts.com/companies/ficofi-partners-holding-pte-ltd-singapore/84b81fc9-5b2b-e993-a43e-5b4acb7e0366&quot;</span><span
+                                                class="p">,</span>
         <span class="s2">&quot;https://singapore-corp.com/co/ficofi-partners-holding-pte-ltd&quot;</span>
     <span class="p">]</span>
 <span class="p">}</span>
-</pre></div>
+</pre>
+                                    </div>
 
-    </div>
-</div>
-</div>
+                                </div>
+                            </div>
+                        </div>
 
-</div></div></section></section><section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[105]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hitting Profile Summarization API&#39;</span><span class="p">)</span>
-<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">request_url</span><span class="p">,</span><span class="n">json</span><span class="o">=</span><span class="n">input_data</span><span class="p">)</span>
-</pre></div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section>
+            <section>
+                <div class="cell border-box-sizing code_cell rendered">
+                    <div class="input">
+                        <div class="prompt input_prompt">In&nbsp;[105]:</div>
+                        <div class="inner_cell">
+                            <div class="input_area">
+                                <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span
+                                        class="p">(</span><span
+                                        class="s1">&#39;Hitting Profile Summarization API&#39;</span><span
+                                        class="p">)</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span
+                                            class="n">post</span><span class="p">(</span><span class="n">url</span><span
+                                            class="o">=</span><span class="n">request_url</span><span class="p">,</span><span
+                                            class="n">json</span><span class="o">=</span><span
+                                            class="n">input_data</span><span class="p">)</span>
+</pre>
+                                </div>
 
-    </div>
-</div>
-</div>
+                            </div>
+                        </div>
+                    </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
+                    <div class="output_wrapper">
+                        <div class="output">
 
 
-<div class="output_subarea output_stream output_stdout output_text">
+                            <div class="output_area">
+
+                                <div class="prompt"></div>
+
+
+                                <div class="output_subarea output_stream output_stdout output_text">
 <pre>Hitting Profile Summarization API
 </pre>
-</div>
-</div>
+                                </div>
+                            </div>
 
-</div>
-</div>
+                        </div>
+                    </div>
 
-</div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[106]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The Profile Summary of FICOFI PARTNERS HOLDING PTE extracted from web: </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s1">&#39;Summary&#39;</span><span class="p">]))</span>
-</pre></div>
+                </div>
+                <div class="fragment">
+                    <div class="cell border-box-sizing code_cell rendered">
+                        <div class="input">
+                            <div class="prompt input_prompt">In&nbsp;[106]:</div>
+                            <div class="inner_cell">
+                                <div class="input_area">
+                                    <div class=" highlight hl-ipython3"><pre><span></span><span
+                                            class="nb">print</span><span class="p">(</span><span class="s1">&#39;The Profile Summary of FICOFI PARTNERS HOLDING PTE extracted from web: </span><span
+                                            class="se">\n</span><span class="s1">&#39;</span><span
+                                            class="p">,</span> <span class="nb">str</span><span class="p">(</span><span
+                                            class="n">response</span><span class="o">.</span><span class="n">json</span><span
+                                            class="p">()[</span><span class="s1">&#39;Summary&#39;</span><span
+                                            class="p">]))</span>
+</pre>
+                                    </div>
 
-    </div>
-</div>
-</div>
+                                </div>
+                            </div>
+                        </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
+                        <div class="output_wrapper">
+                            <div class="output">
 
 
-<div class="output_subarea output_stream output_stdout output_text">
+                                <div class="output_area">
+
+                                    <div class="prompt"></div>
+
+
+                                    <div class="output_subarea output_stream output_stdout output_text">
 <pre>The Profile Summary of FICOFI PARTNERS HOLDING PTE extracted from web: 
  Unique Entity Number: 201309826H FICOFI PARTNERS HOLDING PTE. The company was registered / incorporated on 12 April 2013 (Friday), 7 years ago The address of this company registered office is 25 INTERNATIONAL BUSINESS PARK #03-01/02 GERMAN CENTRE SINGAPORE 609916 The company has 7 officers / owners / shareholders. Ltd. is an enterprise located in Singapore, with the main office in Singapore. It was incorporated on April 12, 2013. Ltd. report to view the information. EMIS company profiles are part of a larger information service which combines company, industry and country data and analysis for over 145 emerging markets. To view more information, Request a demonstration of the EMIS service FICOFI PARTNERS HOLDING PTE LTD 25 International Business Park #03-01/02 German Centre Singapore 609916 Copyright © 2020. Marshall Cavendish Business Information Pte Ltd. All Rights Reserved. The entity status is Live Company. Please comment or provide details below to improve the information on . HOT LEADS / LISTS HR Managers eMail Lists HR Managers Database HR-VP, Directors Database Finance Managers eMail Lists Finance Managers Database IT Managers eMail Lists IT Managers Database CIO / CTO Database CFO / Director - Finance eMail Lists CFO / Director - Finance Database Sales Managers eMail Lists Sales Managers Database Sales-VP, Director Database CEO, President, MD eMail Lists Directors (Share Holding) eMail Lists Marketing Managers eMail Lists Marketing Managers Database Marketing-VP, Director Database CEO, President, MD Database Directors (Share Holding) Database Home | Enquiry | FAQ | Contact Copyright © 2020 Singapore Contacts.
 </pre>
-</div>
-</div>
+                                    </div>
+                                </div>
 
-</div>
-</div>
+                            </div>
+                        </div>
 
-</div></div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[107]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The Profile Summary of FICOFI PARTNERS HOLDING PTE extracted from web: </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s1">&#39;Similarity Score&#39;</span><span class="p">]))</span>
-</pre></div>
+                    </div>
+                </div>
+                <div class="fragment">
+                    <div class="cell border-box-sizing code_cell rendered">
+                        <div class="input">
+                            <div class="prompt input_prompt">In&nbsp;[107]:</div>
+                            <div class="inner_cell">
+                                <div class="input_area">
+                                    <div class=" highlight hl-ipython3"><pre><span></span><span
+                                            class="nb">print</span><span class="p">(</span><span class="s1">&#39;The Profile Summary of FICOFI PARTNERS HOLDING PTE extracted from web: </span><span
+                                            class="se">\n</span><span class="s1">&#39;</span><span
+                                            class="p">,</span> <span class="nb">str</span><span class="p">(</span><span
+                                            class="n">response</span><span class="o">.</span><span class="n">json</span><span
+                                            class="p">()[</span><span class="s1">&#39;Similarity Score&#39;</span><span
+                                            class="p">]))</span>
+</pre>
+                                    </div>
 
-    </div>
-</div>
-</div>
+                                </div>
+                            </div>
+                        </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
+                        <div class="output_wrapper">
+                            <div class="output">
 
 
-<div class="output_subarea output_stream output_stdout output_text">
+                                <div class="output_area">
+
+                                    <div class="prompt"></div>
+
+
+                                    <div class="output_subarea output_stream output_stdout output_text">
 <pre>The Profile Summary of FICOFI PARTNERS HOLDING PTE extracted from web: 
  0.8796509024349501
 </pre>
-</div>
-</div>
+                                    </div>
+                                </div>
 
-</div>
-</div>
+                            </div>
+                        </div>
 
-</div></div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[108]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The Profile Summary of FICOFI PARTNERS HOLDING PTE extracted from web: </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s1">&#39;Polarity&#39;</span><span class="p">]))</span>
-</pre></div>
+                    </div>
+                </div>
+                <div class="fragment">
+                    <div class="cell border-box-sizing code_cell rendered">
+                        <div class="input">
+                            <div class="prompt input_prompt">In&nbsp;[108]:</div>
+                            <div class="inner_cell">
+                                <div class="input_area">
+                                    <div class=" highlight hl-ipython3"><pre><span></span><span
+                                            class="nb">print</span><span class="p">(</span><span class="s1">&#39;The Profile Summary of FICOFI PARTNERS HOLDING PTE extracted from web: </span><span
+                                            class="se">\n</span><span class="s1">&#39;</span><span
+                                            class="p">,</span> <span class="nb">str</span><span class="p">(</span><span
+                                            class="n">response</span><span class="o">.</span><span class="n">json</span><span
+                                            class="p">()[</span><span class="s1">&#39;Polarity&#39;</span><span
+                                            class="p">]))</span>
+</pre>
+                                    </div>
 
-    </div>
-</div>
-</div>
+                                </div>
+                            </div>
+                        </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
+                        <div class="output_wrapper">
+                            <div class="output">
 
 
-<div class="output_subarea output_stream output_stdout output_text">
+                                <div class="output_area">
+
+                                    <div class="prompt"></div>
+
+
+                                    <div class="output_subarea output_stream output_stdout output_text">
 <pre>The Profile Summary of FICOFI PARTNERS HOLDING PTE extracted from web: 
  0.14280303030303027
 </pre>
-</div>
-</div>
+                                    </div>
+                                </div>
 
-</div>
-</div>
+                            </div>
+                        </div>
 
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
+                    </div>
+                    <div class="cell border-box-sizing code_cell rendered">
+                        <div class="input">
+                            <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+                            <div class="inner_cell">
+                                <div class="input_area">
+                                    <div class=" highlight hl-ipython3"><pre><span></span>
+</pre>
+                                    </div>
 
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="cell border-box-sizing code_cell rendered">
+                        <div class="input">
+                            <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+                            <div class="inner_cell">
+                                <div class="input_area">
+                                    <div class=" highlight hl-ipython3"><pre><span></span>
+</pre>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </section>
     </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div></div></section></section>
-</div>
 </div>
 
 <script>
@@ -17157,6 +17443,7 @@ require(
     }
 
 );
+
 </script>
 
 </body>

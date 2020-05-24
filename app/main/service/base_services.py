@@ -1,18 +1,16 @@
 import re
 from collections import defaultdict
+
 import spacy
-import stanza
+import usaddress
 from bs4 import BeautifulSoup
 from ordered_set import OrderedSet
-# from postal.parser import parse_address
-import usaddress
-from spacy_stanza import StanzaLanguage
 from summarizer import Summarizer
+import stanza
+from spacy_stanza import StanzaLanguage
 
-# snlp = stanza.Pipeline(lang="en")
-# stanza_nlp = StanzaLanguage(snlp)
-
-spacy_nlp = spacy.load('en_core_web_sm')
+snlp = stanza.Pipeline(lang="en")
+stanza_nlp = StanzaLanguage(snlp)
 from spacy.lang.en.stop_words import STOP_WORDS
 
 model = Summarizer()
@@ -26,12 +24,12 @@ def text_cleaning(raw_text, remove_stopwords=True):
             token for token in raw_text_list if token not in STOP_WORDS
         ]
     clean_sent_list = [
-        re.sub("[^A-Za-z0-9]", '', token) for token in raw_text_list
+        re.sub("[^A-Za-z0-9].\/", '', token) for token in raw_text_list
         if bool(token)
     ]
     clean_sent = ' '.join(clean_sent_list)
     clean_sent = ' '.join(clean_sent.split())
-    doc = spacy_nlp(clean_sent)
+    doc = stanza_nlp(clean_sent)
 
     spacy_text_list = []
     for sent in doc.sents:
@@ -74,7 +72,7 @@ def __parse_address(match_text):
 
     for match in match_text:
         _addrs = OrderedSet(
-            usaddress.parse(address=' '.join(list(match))))
+            usaddress.parse(' '.join(list(match))))
         if bool(_addrs):
             for item in _addrs:
                 address[item[1]].add(item[0])

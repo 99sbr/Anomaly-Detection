@@ -1,9 +1,7 @@
 from itertools import combinations
-
 import requests
 from flask_restplus import abort
 from ordered_set import OrderedSet
-
 from .base_services import text_cleaning, __parse_address, parse_article
 
 

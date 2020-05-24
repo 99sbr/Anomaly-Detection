@@ -1,192 +1,89 @@
-absl-py==0.9.0
-address==0.1.1
-alembic==1.4.2
-aniso8601==8.0.0
-appnope==0.1.0
-astor==0.8.1
-astroid==2.3.1
-atomicwrites==1.3.0
-attrs==19.2.0
-Automat==20.2.0
-autopep8==1.5
-backcall==0.1.0
-bcrypt==3.1.7
-beautifulsoup4==4.9.0
-bert-extractive-summarizer==0.4.0
-bleach==3.1.0
-blis==0.4.1
-bpemb==0.3.0
-bs4==0.0.1
-bson==0.5.8
-cachetools==4.0.0
-catalogue==1.0.0
-certifi==2019.9.11
-cffi==1.13.0
-chardet==3.0.4
-chart-studio==1.0.0
-click==6.7
-cloudpickle==1.2.2
-colorlover==0.3.0
-configparser==4.0.2
-constantly==15.1.0
-convertdate==2.2.0
-corenlp-python==3.4.1.post1
-cryptography==2.8
-cssselect==1.1.0
-cufflinks==0.17.0
-cycler==0.10.0
-cymem==2.0.3
-cytoolz==0.9.0.1
-data==0.4
-decorator==4.4.0
-defusedxml==0.6.0
-Deprecated==1.2.6
-dill==0.2.9
-dm-sonnet==1.23
-docutils==0.15.2
-dtale==1.7.9
-easydict==1.8
-efficientnet==1.1.0
+Package                    Version
+-------------------------- ----------
+aniso8601                  8.0.0
+attrs                      19.3.0
+bcrypt                     3.1.7
+beautifulsoup4             4.9.1
+bert-extractive-summarizer 0.4.2
+bert-tensorflow            1.0.1
+blis                       0.4.1
+boto3                      1.13.16
+botocore                   1.16.16
+bs4                        0.0.1
+catalogue                  1.0.0
+certifi                    2020.4.5.1
+cffi                       1.14.0
+chardet                    3.0.4
+click                      7.1.2
+cymem                      2.0.3
+docutils                   0.15.2
 en-core-web-sm@ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.2.5/en_core_web_sm-2.2.5.tar.gz
-entrypoints==0.3
-falcon==2.0.0
-fasttext==0.9.2
-filelock==3.0.12
-Flask==1.1.1
-Flask-Bcrypt==0.7.1
-Flask-Compress==1.4.0
-Flask-Cors==3.0.8
-Flask-Migrate==2.5.3
-flask-ngrok==0.0.25
-flask-restplus==0.13.0
-Flask-Script==2.0.6
-Flask-Testing==0.8.0
-funcsigs==1.0.2
-funcy==1.14
-future==0.18.0
-gast==0.3.3
-gensim==3.8.1
-html2text==2020.1.16
-html5lib==1.0.1
-neuralcoref==4.0
-numpy==1.18.3
-nltk
-opencv-python==4.0.0.21
-opt-einsum==3.1.0
-ordered-set==3.1.1
-ordered-set-stubs==0.1.3
-overrides==2.8.0
-packaging==19.2
-pandas==1.0.3
-pandoc==1.0.2
-pandocfilters==1.4.2
-parsel==1.5.2
-parso==0.5.1
-pathlib==1.0.1
-patsy==0.5.1
-pexpect==4.7.0
-pi==0.1.2
-pickleshare==0.7.5
-Pillow==7.1.2
-plac==0.9.6
-plotly==4.6.0
-plotly-express==0.4.1
-pluggy==0.13.0
-ply==3.11
-powerlaw==1.4.6
-preshed==3.0.2
-probableparsing==0.0.1
-prometheus-client==0.7.1
-prompt-toolkit==2.0.9
-Protego==0.1.16
-protobuf==3.11.3
-psutil==5.7.0
-ptyprocess==0.6.0
-py==1.8.0
-pyaml==20.3.1
-pyasn1==0.4.8
-pyasn1-modules==0.2.8
-pybind11==2.5.0
-pycodestyle==2.5.0
-pycorenlp==0.3.0
-pycparser==2.19
-PyDispatcher==2.0.5
-pyemd==0.5.1
-Pygments==2.4.2
-PyHamcrest==2.0.2
-PyJWT==1.7.1
-pyLDAvis==2.1.2
-pylint==2.4.2
-PyMeeus==0.3.6
-pymongo==3.9.0
-pyOpenSSL==19.1.0
-pyparsing==2.4.2
-Pyphen==0.9.5
-pyrsistent==0.15.4
-pystan==2.19.1.1
-pytest==5.4.2
-python-crfsuite==0.9.7
-python-dateutil==2.8.0
-python-editor==1.0.4
-python-telegram-bot==12.2.0
-pytorch-pretrained-bert==0.6.2
-pytorch-transformers==1.2.0
-pytz==2019.2
-queuelib==1.5.0
-rdflib==5.0.0
-regex==2017.4.5
-requests==2.23.0
-requests-oauthlib==1.3.0
-retrying==1.3.3
-rise==5.6.1
-rsa==4.0
-s3transfer==0.2.1
-sacremoses==0.0.35
-seaborn==0.9.0
-segtok==1.5.7
-Send2Trash==1.5.0
-sentencepiece==0.1.83
-seqeval==0.0.12
-service-identity==18.1.0
-setuptools-git==1.2
-shutilwhich==1.1.0
-simplejson==3.17.0
-six==1.14.0
-smart-open==1.8.4
-soupsieve==1.9.4
-spacy==2.2.4
-spacy-lookups-data==0.3.0
-spacy-stanza==0.2.1
-sqlitedict==1.6.0
-srsly==1.0.2
-stanza==1.0.1
-street-address==0.4.0
-tabulate==0.8.5
-tbb==2019.0
-tempdir==0.7.1
-tensorboard==2.1.1
-tensorflow==2.0.0
-tensorflow-estimator==2.1.0
-tensorflow-hub==0.7.0
-textblob==0.15.3
-textteaser==0.3
-theme==0.1.0
-thinc==7.4.0
-tokenizers==0.5.2
-toolz==0.10.0
-torch==1.5.0
-torchvision==0.6.0
-tornado==6.0.3
-tqdm==4.45.0
-traitlets==4.3.2
-transformers==2.8.0
-twilio==6.32.0
-Twisted==19.10.0
-typed-ast==1.4.0
-ujson==2.0.3
-urllib3==1.24.3
-usaddress==0.5.10
-w3lib==1.21.0
-waitress==1.3.1
-webencodings==0.5.1
-Werkzeug==0.16.1
+filelock                   3.0.12
+Flask                      1.1.2
+Flask-Bcrypt               0.7.1
+flask-restplus             0.13.0
+Flask-Script               2.0.6
+Flask-Testing              0.8.0
+ftfy                       5.7
+future                     0.18.2
+idna                       2.9
+importlib-metadata         1.6.0
+itsdangerous               1.1.0
+Jinja2                     2.11.2
+jmespath                   0.10.0
+joblib                     0.15.1
+jsonschema                 3.2.0
+MarkupSafe                 1.1.1
+more-itertools             8.3.0
+murmurhash                 1.0.2
+nltk                       3.5
+numpy                      1.18.4
+ordered-set                4.0.1
+packaging                  20.4
+Pillow                     7.1.2
+pip                        20.1.1
+plac                       1.1.3
+pluggy                     0.13.1
+preshed                    3.0.2
+probableparsing            0.0.1
+protobuf                   3.12.1
+py                         1.8.1
+pycparser                  2.20
+pyparsing                  2.4.7
+pyrsistent                 0.16.0
+pytest                     5.4.2
+python-crfsuite            0.9.7
+python-dateutil            2.8.1
+pytokenizations            0.4.10
+pytz                       2020.1
+regex                      2020.5.14
+requests                   2.23.0
+s3transfer                 0.3.3
+sacremoses                 0.0.43
+scikit-learn               0.23.1
+scipy                      1.4.1
+sentencepiece              0.1.91
+setuptools                 46.4.0
+six                        1.15.0
+soupsieve                  2.0.1
+spacy                      2.2.4
+spacy-stanza               0.2.1
+spacy-transformers         0.6.0
+srsly                      1.0.2
+stanza                     1.0.1
+textblob                   0.15.3
+thinc                      7.4.0
+threadpoolctl              2.0.0
+tokenizers                 0.5.2
+torch                      1.5.0
+torchcontrib               0.0.2
+torchvision                0.6.0
+tqdm                       4.46.0
+transformers               2.5.1
+urllib3                    1.25.9
+usaddress                  0.5.10
+waitress                   1.4.3
+wasabi                     0.6.0
+wcwidth                    0.1.9
+Werkzeug                   0.16.1
+zipp                       3.1.0
