@@ -9,3 +9,4 @@ app/main/util/__pycache__/
 app/test/__pycache__/
 /.github/
 /.ipynb_checkpoints/
+__pycache__/manage.cpython-37.pyc
