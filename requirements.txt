@@ -44,7 +44,7 @@ pluggy==0.13.1
 preshed==3.0.2
 probableparsing==0.0.1
 protobuf==3.12.1
-py==1.8.1
+py==1.10.0
 pycparser==2.20
 pyparsing==2.4.7
 pyrsistent==0.16.0
