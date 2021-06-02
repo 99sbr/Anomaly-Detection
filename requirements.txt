@@ -76,7 +76,7 @@ torchcontrib==0.0.2
 torchvision==0.6.0
 tqdm==4.46.0
 transformers==2.10.0
-urllib3==1.25.9
+urllib3==1.26.5
 usaddress==0.5.10
 waitress==1.4.3
 wasabi==0.6.0
